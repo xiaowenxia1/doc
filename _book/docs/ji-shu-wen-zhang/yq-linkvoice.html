@@ -1,0 +1,827 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>阿里智能语音服务 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-footer-copyright/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="wiki-sig-ble-mesh.html" />
+    
+    
+    <link rel="prev" href="yq-umesh-security.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../introduction/alios-things-shi-shen-me.html">
+            
+                <a href="../../introduction/alios-things-shi-shen-me.html">
+            
+                    
+                    AliOS Things 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">快速开始</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../quickstart/quickstart/">
+            
+                <a href="../../quickstart/quickstart/">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../quickstart/quickstart/helloworld.html">
+            
+                <a href="../../quickstart/quickstart/helloworld.html">
+            
+                    
+                    第一个C应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../quickstart/quickstart/boneengine_firstjs.html">
+            
+                <a href="../../quickstart/quickstart/boneengine_firstjs.html">
+            
+                    
+                    第一个JS应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">文档</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../technical-overview.html">
+            
+                <a href="../technical-overview.html">
+            
+                    
+                    技术架构总览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../hardware/">
+            
+                <a href="../hardware/">
+            
+                    
+                    硬件支持
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../hardware/boards/">
+            
+                <a href="../hardware/boards/">
+            
+                    
+                    开发板
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1.1" data-path="../hardware/boards/starterkit.html">
+            
+                <a href="../hardware/boards/starterkit.html">
+            
+                    
+                    AliOS Things Starter Kit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.1.2" data-path="../hardware/boards/developerkit.html">
+            
+                <a href="../hardware/boards/developerkit.html">
+            
+                    
+                    AliOS Things Developer Kit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../components/">
+            
+                <a href="../components/">
+            
+                    
+                    组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../components/boneengine-lite-tech.html">
+            
+                <a href="../components/boneengine-lite-tech.html">
+            
+                    
+                    BoneEngine@Lite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.2" data-path="../components/yq-sal.html">
+            
+                <a href="../components/yq-sal.html">
+            
+                    
+                    AliOS Things 网络适配框架 - SAL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.3" data-path="../components/geng-duo-zu-jian.html">
+            
+                <a href="../components/geng-duo-zu-jian.html">
+            
+                    
+                    更多组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../kai-fa-gong-ju/">
+            
+                <a href="../kai-fa-gong-ju/">
+            
+                    
+                    开发工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.4.1" data-path="../kai-fa-gong-ju/be-cli-for-windows-install.html">
+            
+                <a href="../kai-fa-gong-ju/be-cli-for-windows-install.html">
+            
+                    
+                    如何在windows下准备be-cli应用开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.2" data-path="../kai-fa-gong-ju/yq-udcenter.html">
+            
+                <a href="../kai-fa-gong-ju/yq-udcenter.html">
+            
+                    
+                    uDevice Center - IoT弹性在线多设备开发平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.3" data-path="../kai-fa-gong-ju/yq-ci-system.html">
+            
+                <a href="../kai-fa-gong-ju/yq-ci-system.html">
+            
+                    
+                    AliOS Things 持续集成(CI)系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    技术文章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.1" data-path="articles-1.html">
+            
+                <a href="articles-1.html">
+            
+                    
+                    博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.2" data-path="yq-umesh-security.html">
+            
+                <a href="yq-umesh-security.html">
+            
+                    
+                    AliOS Things自组织网络安全认证架构概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.5.3" data-path="yq-linkvoice.html">
+            
+                <a href="yq-linkvoice.html">
+            
+                    
+                    阿里智能语音服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.4" data-path="wiki-sig-ble-mesh.html">
+            
+                <a href="wiki-sig-ble-mesh.html">
+            
+                    
+                    AliOS Things SIG BLE Mesh 搭建指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.5" data-path="yq-iot-network-features.html">
+            
+                <a href="yq-iot-network-features.html">
+            
+                    
+                    关于IoT网络的一些特征的探讨
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../certification/">
+            
+                <a href="../certification/">
+            
+                    
+                    认证
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.6.1" data-path="../certification/modules.html">
+            
+                <a href="../certification/modules.html">
+            
+                    
+                    认证模组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../release.html">
+            
+                <a href="../release.html">
+            
+                    
+                    版本发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">社区</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../community/community.html">
+            
+                <a href="../../community/community.html">
+            
+                    
+                    官方渠道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../community/contact.html">
+            
+                <a href="../../community/contact.html">
+            
+                    
+                    联系我们
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >阿里智能语音服务</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x963F;&#x91CC;&#x667A;&#x80FD;&#x8BED;&#x97F3;&#x670D;&#x52A1;">&#x963F;&#x91CC;&#x667A;&#x80FD;&#x8BED;&#x97F3;&#x670D;&#x52A1;</h1>
+<p>&#x968F;&#x7740;AI&#x6280;&#x672F;&#x7684;&#x8FDB;&#x6B65;&#xFF0C;&#x667A;&#x80FD;&#x8BED;&#x97F3;&#x5F00;&#x59CB;&#x5C06;&#x4EBA;&#x673A;&#x4EA4;&#x4E92;&#x4ECE;&#x624B;+&#x773C;&#x775B;&#x7684;&#x4F20;&#x7EDF;&#x6A21;&#x5F0F;&#x4E2D;&#x89E3;&#x653E;&#x51FA;&#x6765;&#x3002;&#x5E26;&#x7ED9;&#x4EBA;&#x4EEC;&#x66F4;&#x4FBF;&#x6377;&#x3001;&#x66F4;&#x98CE;&#x8DA3;&#x3001;&#x66F4;&#x6709;&#x4EBA;&#x60C5;&#x5473;&#x7684;&#x4F53;&#x9A8C;&#xFF0C;&#x8BA9;&#x88AB;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;&#x53D8;&#x5F97;&#x4E0D;&#x518D;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x6B7B;&#x677F;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x800C;&#x66F4;&#x50CF;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x751F;&#x547D;&#x7684;&#x52A9;&#x7406;&#x3002;&#x201C;&#x5E2E;&#x6211;&#x6253;&#x5F00;&#x7A7A;&#x8C03;&#x201D;&#xFF0C;&#x201C;&#x660E;&#x5929;&#x4E0A;&#x73ED;&#x9700;&#x8981;&#x5E26;&#x4F1E;&#x5417;&#x201D;&#xFF0C;&#x201C;&#x5E2E;&#x6211;&#x51B2;100&#x5757;&#x94B1;&#x8BDD;&#x8D39;&#x201D;&#x2026;&#x5728;&#x4E07;&#x7269;&#x4E92;&#x8054;&#x7684;&#x65F6;&#x4EE3;&#xFF0C;&#x4F60;&#x7684;&#x6240;&#x6709;&#x9700;&#x6C42;&#x53EA;&#x9700;&#x8981;&#x4E00;&#x53E5;&#x8BDD;&#x4FBF;&#x80FD;&#x5B9E;&#x73B0;&#x3002; AliOS Things &#x96C6;&#x6210;&#x7684;Link Voice SDK&#x5373;&#x53EF;&#x5B9E;&#x73B0;&#x667A;&#x80FD;&#x8BED;&#x97F3;&#x4EA4;&#x4E92;&#x3002;</p>
+<h2 id="&#x5173;&#x4E8E;&#x963F;&#x91CC;&#x667A;&#x80FD;&#x8BED;&#x97F3;&#x670D;&#x52A1;">&#x5173;&#x4E8E;&#x963F;&#x91CC;&#x667A;&#x80FD;&#x8BED;&#x97F3;&#x670D;&#x52A1;</h2>
+<p>&#x963F;&#x91CC;&#x667A;&#x80FD;&#x8BED;&#x97F3;&#x670D;&#x52A1;&#x4E3A;&#x8BBE;&#x5907;&#x63D0;&#x4F9B;&#x8BED;&#x97F3;&#x4EA4;&#x4E92;&#x80FD;&#x529B;&#x3001;&#x4E30;&#x5BCC;&#x7684;&#x97F3;&#x4E50;&#x5185;&#x5BB9;&#x3001;&#x667A;&#x80FD;&#x5BB6;&#x5C45;&#x63A7;&#x5236;&#x7B49;&#xFF0C;&#x5E76;&#x53EF;&#x8FDB;&#x884C;&#x4E13;&#x6709;&#x8BBE;&#x5907;&#x6280;&#x80FD;&#x5B9A;&#x5236;&#xFF08;&#x5982;&#xFF1A;&#x8BED;&#x97F3;&#x64CD;&#x63A7;&#x8DD1;&#x6B65;&#x673A;&#x3001;&#x6309;&#x6469;&#x6905;&#x7B49;&#x8BBE;&#x5907;&#xFF09;&#x3002;&#x5305;&#x62EC;&#xFF1A;</p>
+<ul>
+<li>&#x901A;&#x7528;&#x670D;&#x52A1;&#xFF1A;&#x641C;&#x6B4C;&#x3001;&#x641C;&#x680F;&#x76EE;&#x3001;&#x641C;&#x7535;&#x53F0;&#x3001;&#x95EE;&#x5929;&#x6C14;&#x3001;&#x767E;&#x79D1;&#x3001;&#x56DB;&#x5219;&#x8FD0;&#x7B97;&#x7B49;&#xFF1B;</li>
+<li>&#x963F;&#x91CC;&#x670D;&#x52A1;&#xFF1A;&#x63A7;&#x5236;&#x667A;&#x80FD;&#x5BB6;&#x5C45;&#x3001;&#x5145;&#x503C;&#x624B;&#x673A;&#x8D39;&#x3001;&#x5929;&#x732B;&#x8D85;&#x5E02;&#x8D2D;&#x7269;&#x3001;&#x67E5;&#x8BE2;&#x7535;&#x8D39;&#x7B49; &#xFF08;&#x9700;&#x63A5;&#x5165;&#x8D26;&#x53F7;&#x4F53;&#x7CFB;&#xFF0C;&#x53EF;&#x53C2;&#x8003;SDS&#x63A5;&#x5165;&#xFF09;&#xFF1B;</li>
+<li>&#x79C1;&#x6709;&#x670D;&#x52A1;&#xFF1A;&#x64CD;&#x63A7;&#x8BBE;&#x5907;&#x3001;&#x552E;&#x540E;&#x7535;&#x8BDD;&#x67E5;&#x8BE2;&#x7B49; &#xFF08;&#x9700;&#x8981;&#x6280;&#x80FD;&#x5B9A;&#x5236;&#xFF0C;&#x7B7E;&#x7EA6;&#x65F6;&#x8BF7;&#x63D0;&#x4F9B;&#x4EA7;&#x54C1;&#x9700;&#x6C42;&#xFF09;&#x3002;</li>
+</ul>
+<h2 id="&#x529F;&#x80FD;&#x96C6;&#x6210;">&#x529F;&#x80FD;&#x96C6;&#x6210;</h2>
+<p>&#x8BBE;&#x5907;&#x63A5;&#x5165;&#x963F;&#x91CC;&#x8BED;&#x97F3;&#x670D;&#x52A1;&#xFF0C;&#x9700;&#x8981;&#x96C6;&#x6210;Alink SDK&#x548C;Link-Voice SDK&#xFF0C;&#x5176;&#x4E2D;Alink SDK&#x4E3A;&#x8BBE;&#x5907;&#x63D0;&#x4F9B;&#x63A5;&#x5165;&#x963F;&#x91CC;IoT&#x5E73;&#x53F0;&#x7684;&#x8FDE;&#x63A5;&#x3001;&#x8D26;&#x53F7;&#x4F53;&#x7CFB;&#x3001;&#x914D;&#x7F51;&#x3001;OTA&#x7B49;&#x80FD;&#x529B;&#xFF0C;&#x800C;Link-Voice SDK&#x4E3A;&#x8BBE;&#x5907;&#x63D0;&#x4F9B;&#x963F;&#x91CC;&#x667A;&#x80FD;&#x8BED;&#x97F3;&#x670D;&#x52A1;&#x3002;&#x8BBE;&#x5907;&#x9996;&#x5148;&#x8981;&#x96C6;&#x6210;&#x4E86;Alink SDK&#x6210;&#x4E3A;SDS&#x5E73;&#x53F0;&#x7684;&#x4E00;&#x4E2A;&#x8BBE;&#x5907;&#xFF0C;&#x624D;&#x80FD;&#x901A;&#x8FC7;&#x96C6;&#x6210;Link-Voice SDK&#x4F7F;&#x7528;&#x963F;&#x91CC;&#x667A;&#x80FD;&#x8BED;&#x97F3;&#x670D;&#x52A1;&#x3002; Link-Voice SDK&#x9664;&#x4E86;&#x4F9D;&#x8D56;Alink&#x4E3A;&#x8BBE;&#x5907;&#x5B8C;&#x6210;&#x5E73;&#x53F0;&#x63A5;&#x5165;&#x8BBE;&#x5907;&#x7BA1;&#x7406;&#x5916;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x8868;&#x683C;&#x6240;&#x5217;&#x6A21;&#x5757;&#x5B8C;&#x6210;&#x76F8;&#x5E94;&#x5DE5;&#x4F5C;&#x3002;&#x5176;&#x4E2D;websockets&#x7528;&#x6765;&#x8FDB;&#x884C;&#x8BED;&#x97F3;&#x6570;&#x636E;&#x7684;&#x4EA4;&#x4E92;&#xFF1B;opus&#x5B8C;&#x6210;&#x8BED;&#x97F3;&#x5F55;&#x5236;&#x7684;PCM&#x683C;&#x5F0F;&#x5230;opus&#x683C;&#x5F0F;&#x7684;&#x8F6C;&#x6362;&#xFF08;&#x670D;&#x52A1;&#x7AEF;&#x53EA;&#x63A5;&#x6536;opus&#x683C;&#x5F0F;&#xFF09;&#xFF1B;cjson&#x7528;&#x6765;&#x505A;json&#x89E3;&#x6790;&#xFF1B;mbedtls&#x4E3A;alink&#x548C;websockets&#x7684;&#x5E95;&#x5C42;&#x8FDE;&#x63A5;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x4E3A;&#x5176;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x63D0;&#x4F9B;&#x5B89;&#x5168;&#x4FDD;&#x969C;&#x3002; <img src="https://img.alicdn.com/tfs/TB1WsGwaKOSBuNjy0FdXXbDnVXa-648-290.png" alt="&#x4F9D;&#x8D56;&#x7EC4;&#x4EF6;"></p>
+<p>&#x800C;&#x76EE;&#x524D;AliOS Things&#x5DF2;&#x5B8C;&#x6210;&#x4EE5;&#x4E0A;&#x8868;&#x683C;&#x6240;&#x6709;&#x6A21;&#x5757;&#x7684;&#x79FB;&#x690D;&#x9002;&#x914D;&#x5DE5;&#x4F5C;&#x5E76;&#x5C06;&#x5176;&#x96C6;&#x6210;&#x8FDB;&#x6765;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x4F7F;&#x7528;AliOS Things&#x4FBF;&#x53EF;&#x5B8C;&#x6210;&#x6109;&#x5FEB;&#x7684;&#x667A;&#x80FD;&#x8BED;&#x97F3;&#x5F00;&#x53D1;&#x3002;&#x4E3B;mcu&#x6027;&#x80FD;&#x5EFA;&#x8BAE;&#xFF1A;</p>
+<ul>
+<li>Flash&gt;=512KB</li>
+<li>RAM&gt;=200KB</li>
+<li>CPU&gt;=180Mhz</li>
+</ul>
+<h2 id="&#x5355;&#x6B21;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x6D41;&#x7A0B;&#x56FE;">&#x5355;&#x6B21;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x6D41;&#x7A0B;&#x56FE;</h2>
+<p>&#x7B80;&#x5316;&#x7F13;&#x51B2;&#x5904;&#x7406;&#x7B49;&#x7EC6;&#x8282;&#xFF1A; <img src="https://yqfile.alicdn.com/c2edf4f6d51b2fef4f4ea67a08b1d32ab2bd4e43.png" alt="\_19\_"></p>
+<h2 id="&#x5F00;&#x53D1;&#x5E73;&#x53F0;&#x51C6;&#x5907;">&#x5F00;&#x53D1;&#x5E73;&#x53F0;&#x51C6;&#x5907;</h2>
+<p>&#x6309;&#x7406;&#x6EE1;&#x8DB3;&#x529F;&#x80FD;&#x96C6;&#x6210;&#x7AE0;&#x8282;&#x6027;&#x80FD;&#x8981;&#x6C42;&#xFF0C;&#x5E76;&#x5E26;&#x97F3;&#x9891;&#x5F55;&#x5236;&#x53CA;&#x64AD;&#x653E;&#x529F;&#x80FD;&#x7684;&#x5F00;&#x53D1;&#x677F;&#x5373;&#x53EF;&#x3002;&#x524D;&#x63D0;&#x662F;&#x9700;&#x8981;&#x5B8C;&#x6210;AliOS Tings&#x7684;&#x79FB;&#x690D;&#x9002;&#x914D;&#x5DE5;&#x4F5C;&#x3002;&#x672C;&#x6587;&#x4EE5;&#x5168;&#x5FD7;xr871evb&#xFF08;&#x5DF2;&#x5B8C;&#x6210;OS&#x9002;&#x914D;&#xFF09;&#x4E3A;&#x4F8B;&#x8FDB;&#x884C;&#x4ECB;&#x7ECD;&#x3002; &#x672C;&#x5E73;&#x53F0;&#x8D44;&#x6E90;&#xFF1A;</p>
+<ul>
+<li>cpu:192Mhz cortext-M4f</li>
+<li>RAM&#xFF1A;448KB&#xFF08;&#x90E8;&#x5206;&#x786C;&#x4EF6;&#x76F8;&#x5173;code&#x9700;&#x8981;&#x52A0;&#x8F7D;&#x5230;ram&#x4E2D;&#x8FD0;&#x884C;&#xFF0C;&#x5B9E;&#x9645;&#x53EF;&#x7528;&#x7EA6;280KB&#xFF09;</li>
+<li>FLASH&#xFF1A;2MB SPI FLASH</li>
+</ul>
+<h2 id="&#x73AF;&#x5883;&#x642D;&#x5EFA;&#x53CA;&#x4EE3;&#x7801;&#x7F16;&#x8BD1;">&#x73AF;&#x5883;&#x642D;&#x5EFA;&#x53CA;&#x4EE3;&#x7801;&#x7F16;&#x8BD1;</h2>
+<p>&#x5148;&#x642D;&#x5EFA;AliOS&#x5F00;&#x53D1;&#x73AF;&#x5883;&#xFF08;&#x4EE5;linux&#x4E3A;&#x4F8B;&#xFF09;&#xFF1A; AliOS-Things-Linux-Environment-Setup</p>
+<p>&#x7136;&#x540E;&#x4ECE;github&#x963F;&#x91CC;&#x5B98;&#x65B9;&#x5F00;&#x6E90;&#x5E93;&#x4E0B;&#x8F7D;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;AliOS Things&#x6E90;&#x7801;&#xFF08;<a href="https://github.com/alibaba/AliOS-Things&#xFF09;&#xFF1A;" target="_blank">https://github.com/alibaba/AliOS-Things&#xFF09;&#xFF1A;</a> &#x4EE5;linux&#x4E0B;&#x5F00;&#x53D1;&#x4E3A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-text">git clone git@github.com:alibaba/AliOS-Things.git
+</code></pre>
+<p>&#x5207;&#x6362;&#x5230;&#x4E3B;&#x5206;&#x652F;&#xFF1A;</p>
+<pre><code class="lang-text">git checkout master
+</code></pre>
+<p>&#x5EFA;&#x8BAE;&#x518D;&#x5728;&#x4E3B;&#x5206;&#x652F;&#x4E0A;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x81EA;&#x5DF1;&#x7684;&#x5F00;&#x53D1;&#x5206;&#x652F;&#xFF1A;</p>
+<pre><code class="lang-text">git checkout &#x2013;b dev-xxx(yourname):
+</code></pre>
+<p>&#x5230;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#x73AF;&#x5883;&#x4E5F;&#x5B89;&#x88C5;&#x597D;&#x4E86;&#xFF0C;&#x4EE3;&#x7801;&#x4E5F;&#x51C6;&#x5907;&#x5B8C;&#x6BD5;&#xFF0C;&#x53EA;&#x5F85;&#x7F16;&#x8BD1;&#x53CA;&#x70E7;&#x5F55;&#x6D4B;&#x8BD5;&#x3002; &#x7F16;&#x8BD1;link-voice&#x6D4B;&#x8BD5;&#x4F8B;&#x7A0B;&#xFF1A;</p>
+<pre><code class="lang-text">aos make linkvoiceapp@xr871evb xr871=1
+</code></pre>
+<p>&#x4EE3;&#x7801;&#x70E7;&#x5165;&#xFF1A;</p>
+<pre><code class="lang-text">cd platform/mcu/xr871/tools/
+</code></pre>
+<p>&#x4FEE;&#x6539;&#x4E32;&#x53E3;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-text">vim settings.ini
+</code></pre>
+<p>&#x5C06;&#x4E32;&#x53E3;&#x6539;&#x6210;&#x4F60;&#x677F;&#x5B50;&#x7684;&#x4E32;&#x53E3;&#x53F7;&#xFF0C;&#x53EF;ls /dev/tty*&#x67E5;&#x770B;&#xFF0C;&#x4FDD;&#x5B58;&#x9000;&#x51FA;&#x3002; <img src="https://img.alicdn.com/tfs/TB1HRuoaL9TBuNjy0FcXXbeiFXa-865-728.png" alt="uart setting"> &#x4EE3;&#x7801;&#x70E7;&#x5199;&#xFF0C;&#x5148;&#x5C06;&#x5168;&#x5FD7;&#x5F00;&#x53D1;&#x677F;&#x542F;&#x52A8;&#x9009;&#x62E9;&#x62E8;&#x7801;&#x5F00;&#x5173;&#x62E8;&#x81F3;NO&#x4F4D;&#x7F6E;&#xFF0C;&#x5982;&#x540C;&#x6240;&#x793A;&#xFF1A; <img src="https://img.alicdn.com/tfs/TB1p2KkaMmTBuNjy1XbXXaMrVXa-865-454.png" alt="flash setting"> &#x7136;&#x540E;&#x6267;&#x884C;</p>
+<pre><code class="lang-text">./phoenixMC_linux  &#x5F00;&#x59CB;&#x8FDB;&#x884C;&#x4EE3;&#x7801;&#x70E7;&#x5199;&#xFF0C;&#x70E7;&#x5199;&#x5B8C;&#x6210;&#x540E;&#x518D;&#x5C06;&#x62E8;&#x7801;&#x5F00;&#x5173;&#x62E8;&#x56DE;&#x9760;&#x4E32;&#x53E3;&#x4F4D;&#x7F6E;&#xFF0C;&#x91CD;&#x542F;&#x3002;
+</code></pre>
+<p>&#x6253;&#x5F00;minicom&#x6216;&#x5176;&#x4ED6;&#x4E32;&#x53E3;&#x5DE5;&#x5177;&#x76D1;&#x89C6;&#x8BBE;&#x5907;&#x8F93;&#x5165;&#x4FE1;&#x606F;&#xFF0C;&#x6CE2;&#x7279;&#x7387;115200&#x3002; &#x529F;&#x80FD;&#x6F14;&#x793A;&#xFF1A; &#x521D;&#x6B21;&#x4E0A;&#x7535;&#x540E;&#x5148;&#x8FDB;&#x884C;&#x914D;&#x7F51;&#xFF1A;</p>
+<pre><code class="lang-text">netmgr connect ssid psswd
+</code></pre>
+<p>&#x5176;&#x4E2D;ssid&#x548C;psswd&#x5206;&#x522B;&#x66FF;&#x6362;&#x4E3A;&#x4F60;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x540D;&#x53CA;&#x5BC6;&#x7801;&#x3002; &#x7531;&#x4E8E;&#x6CA1;&#x6709;&#x52A0;&#x672C;&#x5730;&#x5173;&#x952E;&#x8BCD;&#x8BC6;&#x522B;&#x529F;&#x80FD;&#xFF0C;&#x6240;&#x4EE5;&#x73B0;&#x5728;&#x6CA1;&#x6B21;&#x5BF9;&#x8BDD;&#x9700;&#x8981;&#x6309;&#x952E;&#x89E6;&#x53D1;&#x3002; &#x6839;&#x636E;&#x7EC8;&#x7AEF;&#x63D0;&#x793A;&#xFF0C;&#x5F85;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x540E;&#xFF0C;&#x51FA;&#x73B0;&#x4EE5;&#x4E0B;&#x63D0;&#x793A;&#x65F6;&#xFF1A; <img src="https://img.alicdn.com/tfs/TB1YzEicWmWBuNjy1XaXXXCbXXa-1726-96.png" alt="press key"> &#x6309;&#x6309;&#x952E;2&#xFF08;AK2&#xFF09;&#x89E6;&#x53D1;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x529F;&#x80FD;&#x3002; <img src="https://img.alicdn.com/tfs/TB1o0ataQyWBuNjy0FpXXassXXa-865-199.png" alt="talking"> &#x6B64;&#x65F6;&#x5BF9;&#x7740;&#x5F00;&#x53D1;&#x677F;&#x8BF4;&#x8BDD;&#xFF0C;&#x8BED;&#x97F3;&#x6570;&#x636E;&#x88AB;&#x7F16;&#x7801;&#x3001;&#x4E0A;&#x4F20;&#x5230;&#x4E91;&#x7AEF;&#x3001;&#x8BC6;&#x522B;&#x6210;&#x529F;&#x540E;&#x8FD4;&#x56DE;&#x76F8;&#x5E94;&#x4FE1;&#x606F;&#xFF0C;&#x8BC6;&#x522B;&#x5931;&#x8D25;&#x4EA6;&#x6709;&#x76F8;&#x5E94;&#x63D0;&#x793A;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A; 1:&#x660E;&#x5929;&#x4E0A;&#x73ED;&#x9700;&#x8981;&#x5E26;&#x4F1E;&#x5417;&#xFF1F; 2.&#x7ED9;&#x6211;&#x8BB2;&#x4E2A;&#x9B3C;&#x6545;&#x4E8B;&#x3002; 3.&#x63A8;&#x8350;&#x4E00;&#x90E8;&#x60AC;&#x7591;&#x7535;&#x5F71;&#x3002; 4.&#x628A;&#x7A7A;&#x8C03;&#x6253;&#x5F00;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x4E3A;&#x4E00;&#x4E2A;&#x5C0F;&#x7684;&#x6F14;&#x793A;&#x89C6;&#x9891;&#xFF1A; <a href="http://v.youku.com/v_show/id_XMzQ1NjQ4MjIyOA==.html?spm=a2h3j.8428770.3416059.1" target="_blank">http://v.youku.com/v_show/id_XMzQ1NjQ4MjIyOA==.html?spm=a2h3j.8428770.3416059.1</a></p>
+<h2 id="api&#x4ECB;&#x7ECD;">API&#x4ECB;&#x7ECD;</h2>
+<h3 id="1&#xFF09;&#x521D;&#x59CB;&#x5316;">1&#xFF09;&#x521D;&#x59CB;&#x5316;</h3>
+<p><code>int pal_init(const struct pal_config *config);</code></p>
+<ul>
+<li>&#x8BF4;&#x660E;&#xFF1A; SDK&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x53EA;&#x9700;&#x8C03;&#x7528;&#x4E00;&#x6B21;&#x3002;</li>
+<li>&#x5165;&#x53C2;&#xFF1A;<code>config</code>&#x7ED3;&#x6784;&#x4F53;&#x5411;SDK&#x4F20;&#x9012;&#x5FC5;&#x987B;&#x7684;&#x53C2;&#x6570;</li>
+<li><p>&#x8FD4;&#x56DE;&#xFF1A;0&#x6210;&#x529F;&#xFF1B;-1&#x5931;&#x8D25;</p>
+<p><strong>2&#xFF09;&#x9500;&#x6BC1;</strong></p>
+<p><code>void pal_destroy();</code></p>
+</li>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;SDK&#x9500;&#x6BC1;&#xFF0C;&#x91CA;&#x653E;&#x8D44;&#x6E90;&#x3002;</p>
+</li>
+<li>&#x5165;&#x53C2;&#xFF1A;&#x65E0;</li>
+<li><p>&#x8FD4;&#x56DE;&#xFF1A;&#x65E0;</p>
+<p><strong>3&#xFF09;&#x83B7;&#x53D6;SDK&#x7248;&#x672C;</strong></p>
+<p><code>int pal_version();</code></p>
+</li>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x8FD4;&#x56DE;SDK&#x7684;&#x7248;&#x672C;&#x53F7;</p>
+</li>
+<li>&#x5165;&#x53C2;&#xFF1A;&#x65E0;</li>
+<li><p>&#x8FD4;&#x56DE;&#xFF1A;SDK&#x7248;&#x672C;&#x53F7;</p>
+<p><strong>4&#xFF09;&#x8BBE;&#x7F6E;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;</strong></p>
+<p><code>void pal_set_log_level(int level);</code></p>
+</li>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x8BBE;&#x7F6E;SDK&#x7684;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x3002;&#x8C03;&#x8BD5;&#x9636;&#x6BB5;&#x53EF;&#x8BBE;&#x7F6E;&#x4E3A;PAL_LOG_LEVEL_DEBUG&#x65B9;&#x4FBF;&#x8C03;&#x8BD5;&#x95EE;&#x9898;&#xFF0C;&#x8C03;&#x8BD5;&#x7A33;&#x5B9A;&#x4E4B;&#x540E;&#x4E0A;&#x7EBF;&#x524D;&#x628A;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x8BBE;&#x7F6E;&#x4E3A;PAL_LOG_LEVEL_ERROR&#x3002;</p>
+</li>
+<li>&#x5165;&#x53C2;&#xFF1A;<code>level</code>&#x4E3A;SDK&#x7684;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;</li>
+<li><p>&#x8FD4;&#x56DE;&#xFF1A;&#x65E0;</p>
+<p><strong>5&#xFF09;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;</strong></p>
+<p><code>void pal_set_env(int env);</code></p>
+</li>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x8BBE;&#x7F6E;SDK&#x7684;&#x73AF;&#x5883;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;PAL_ENV_RELEASE&#xFF0C;&#x5728;&#x5382;&#x5546;&#x5916;&#x90E8;&#x73AF;&#x5883;&#x4E0B;&#x53EF;&#x4EE5;&#x8FDE;&#x63A5;&#x963F;&#x91CC;&#x7EBF;&#x4E0A;&#x73AF;&#x5883;&#x3002;&#x5382;&#x5546;&#x65E0;&#x9700;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x3002;</p>
+</li>
+<li>&#x5165;&#x53C2;&#xFF1A;<code>env</code>&#x4E3A;SDK&#x7684;&#x73AF;&#x5883;</li>
+<li><p>&#x8FD4;&#x56DE;&#xFF1A; &#x65E0;</p>
+<p><strong>6&#xFF09;&#x5382;&#x5546;&#x64AD;&#x653E;&#x5668;&#x5411;SDK&#x4E0A;&#x62A5;&#x6D88;&#x606F;</strong></p>
+<p><code>int pal_notify_msg(const char *msg);</code></p>
+</li>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x5382;&#x5546;&#x7684;&#x64AD;&#x653E;&#x5668;&#x7684;&#x72B6;&#x6001;&#x6216;&#x8005;&#x6309;&#x952E;&#x4E8B;&#x4EF6;&#x9700;&#x8981;&#x6309;&#x7167;<code>Link_Voice_SDK_&#x64AD;&#x63A7;&#x534F;&#x8BAE;_v1.0.0.xlsx</code>&#x5B9A;&#x4E49;&#x7684;json&#x683C;&#x5F0F;&#x4E0A;&#x62A5;&#x7ED9;SDK&#x4E0E;&#x4E0A;&#x5C42;&#x5E94;&#x7528;&#x540C;&#x6B65;&#x72B6;&#x6001;&#x3002;</p>
+</li>
+<li>&#x5165;&#x53C2;&#xFF1A;<code>msg</code>&#x4E3A;&#x5382;&#x5546;&#x64AD;&#x653E;&#x5668;&#x9700;&#x8981;&#x5411;SDK&#x4F20;&#x9012;&#x7684;&#x4E8B;&#x4EF6;&#x6D88;&#x606F;</li>
+<li><p>&#x8FD4;&#x56DE;&#xFF1A;0&#x6210;&#x529F;&#xFF1B;-1&#x5931;&#x8D25;</p>
+<p><strong>7&#xFF09;&#x5382;&#x5546;&#x64AD;&#x653E;&#x5668;&#x901A;&#x8FC7;SDK&#x900F;&#x4F20;ALink&#x6D88;&#x606F;</strong></p>
+<p><code>int pal_post_alink_msg(const char *msg);</code></p>
+</li>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;SDK&#x521D;&#x59CB;&#x5316;&#x8FC7;&#x7A0B;&#x4F1A;&#x628A;ALink&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4E0E;&#x963F;&#x91CC;&#x5E73;&#x53F0;&#x4FDD;&#x6301;&#x7269;&#x8054;&#x957F;&#x8FDE;&#x63A5;&#xFF0C;&#x5382;&#x5546;&#x8BBE;&#x5907;&#x9700;&#x8981;&#x4E0A;&#x62A5;&#x7ED9;ALink&#x7684;&#x6D88;&#x606F;&#x53EF;&#x901A;&#x8FC7;&#x8BE5;&#x63A5;&#x53E3;&#x4E0A;&#x62A5;&#xFF0C;SDK&#x5BF9;&#x8BE5;&#x6D88;&#x606F;&#x8FDB;&#x884C;&#x900F;&#x4F20;&#x4E0A;&#x62A5;&#x7ED9;ALink&#x670D;&#x52A1;&#x7AEF;&#x3002;</p>
+</li>
+<li>&#x5165;&#x53C2;&#xFF1A;<code>msg</code>&#x4E3A;&#x5382;&#x5546;&#x9700;&#x8981;&#x901A;&#x8FC7;SDK&#x900F;&#x4F20;&#x7ED9;ALink&#x8FDB;&#x884C;&#x4E0A;&#x62A5;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x683C;&#x5F0F;&#x6309;&#x7167;ALink&#x5B9A;&#x4E49;&#x7684;&#x6D88;&#x606F;&#x683C;&#x5F0F;</li>
+<li><p>&#x8FD4;&#x56DE;&#xFF1A;0&#x6210;&#x529F;&#xFF1B;-1&#x5931;&#x8D25;</p>
+<p><strong>8&#xFF09;&#x5F00;&#x59CB;&#x4E00;&#x6B21;&#x8BED;&#x97F3;&#x8BC6;&#x522B;</strong></p>
+<p><code>int pal_asr_start();</code></p>
+</li>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x8BBE;&#x5907;&#x901A;&#x8FC7;&#x6309;&#x952E;&#x6216;&#x8005;&#x8FDC;&#x573A;&#x5524;&#x9192;&#x89E6;&#x53D1;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x65F6;&#x8C03;&#x7528;&#x3002;</p>
+</li>
+<li>&#x5165;&#x53C2;&#xFF1A;&#x65E0;</li>
+<li><p>&#x8FD4;&#x56DE;&#xFF1A;0&#x6210;&#x529F;&#xFF1B;-1&#x5931;&#x8D25;&#xFF1B;</p>
+<p><strong>9&#xFF09;&#x53D1;&#x9001;&#x8BED;&#x97F3;&#x6570;&#x636E;</strong></p>
+<p><code>int pal_asr_send_buffer(const char *buffer, int buffer_len);</code></p>
+</li>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x8BE5;&#x63A5;&#x53E3;&#x8981;&#x5728;&#x8C03;&#x7528;pal_asr_start&#x6210;&#x529F;&#x4E86;&#x4E4B;&#x540E;&#x8C03;&#x7528;&#xFF0C;&#x53D1;&#x9001;&#x8BED;&#x97F3;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;&#x662F;PCM&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5219;&#x8981;&#x6C42;&#x6BCF;&#x6B21;640&#x5B57;&#x8282;&#x3002;&#x5982;&#x679C;&#x8FD4;&#x56DE;PAL_VAD_STATUS_STOP&#x5219;&#x4E3A;&#x4E91;&#x7AEF;&#x68C0;&#x6D4B;&#x5230;&#x8BED;&#x97F3;&#x7ED3;&#x675F;&#x4E86;&#xFF0C;&#x5382;&#x5546;&#x8FD9;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x8C03;&#x7528;pal_asr_stop&#x6216;pal_asr_stop_async&#x6765;&#x83B7;&#x672C;&#x6B21;&#x8BC6;&#x522B;&#x7ED3;&#x679C;&#x3002;</p>
+</li>
+<li>&#x5165;&#x53C2;&#xFF1A;<code>buffer</code>&#x8BED;&#x97F3;&#x6570;&#x636E;&#xFF0C;<code>buffer_len</code>&#x8BED;&#x97F3;&#x6570;&#x636E;&#x957F;&#x5EA6;&#xFF0C;&#x5B57;&#x8282;</li>
+<li><p>&#x8FD4;&#x56DE;&#xFF1A;&#x8FD4;&#x56DE;&#x4E91;&#x7AEF;&#x68C0;&#x6D4B;&#x5230;&#x7684;VAD&#x72B6;&#x6001;</p>
+<p><strong>10&#xFF09;&#x7ED3;&#x675F;&#x672C;&#x6B21;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#xFF08;&#x540C;&#x6B65;&#x63A5;&#x53E3;&#xFF09;</strong></p>
+<p><code>struct pal_rec_result* pal_asr_stop();</code></p>
+</li>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;pal_rec_result&#x7ED3;&#x6784;&#x4F53;&#x8FD4;&#x56DE;&#x672C;&#x6B21;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x540C;&#x6B65;&#x7684;&#x63A5;&#x53E3;&#x3002;&#x7ED3;&#x6784;&#x4F53;&#x91CC;&#x7684;&#x5B57;&#x6BB5;status&#x8868;&#x793A;&#x672C;&#x6B21;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x7684;&#x72B6;&#x6001;&#xFF1B;should_restore_player_status&#x8868;&#x793A;&#x5382;&#x5546;&#x64AD;&#x653E;&#x5668;&#x5904;&#x7406;&#x5B8C;&#x672C;&#x6B21;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x4E8B;&#x4EF6;&#x4E4B;&#x540E;&#x662F;&#x5426;&#x6062;&#x590D;&#x4E4B;&#x524D;&#x7684;&#x72B6;&#x6001;&#xFF0C;0&#x662F;&#x4E0D;&#x6062;&#x590D;&#xFF0C;1&#x662F;&#x6062;&#x590D;&#xFF1B;asr_result&#x8868;&#x793A;ASR&#x8BC6;&#x522B;&#x7684;&#x6587;&#x672C;&#xFF1B;task_status&#x8868;&#x793A;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x4EFB;&#x52A1;&#x72B6;&#x6001;&#xFF0C;PAL_REC_TASK_STATUS_END&#x8868;&#x793A;&#x5355;&#x6B21;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x4F1A;&#x8BDD;&#x7ED3;&#x675F;&#xFF0C;PAL_REC_TASK_STATUS_WAITING&#x8868;&#x793A;&#x591A;&#x8F6E;&#x5BF9;&#x8BDD;&#xFF0C;&#x5E94;&#x5F53;&#x64AD;&#x5B8C;TTS&#x4E4B;&#x540E;&#x81EA;&#x52A8;&#x8FDB;&#x5165;&#x62FE;&#x97F3;&#x72B6;&#x6001;&#xFF0C;&#x5F00;&#x59CB;&#x4E00;&#x6B21;&#x65B0;&#x7684;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x3002;</p>
+</li>
+<li>&#x5165;&#x53C2;&#xFF1A;&#x65E0;</li>
+<li><p>&#x8FD4;&#x56DE;&#xFF1A;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x7ED3;&#x679C;&#x7684;&#x7ED3;&#x6784;&#x4F53;</p>
+<p><strong>11&#xFF09;&#x7ED3;&#x675F;&#x672C;&#x6B21;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#xFF08;&#x5F02;&#x6B65;&#x63A5;&#x53E3;&#xFF09;</strong></p>
+<p><code>void pal_asr_stop_async(pal_asr_callback callback, void *user);</code></p>
+</li>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x5F02;&#x6B65;&#x8FD4;&#x56DE;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x529F;&#x80FD;&#x4E0E;pal_asr_stop&#x4E00;&#x6837;&#x3002;</p>
+</li>
+<li>&#x5165;&#x53C2;&#xFF1A;<code>callback</code>&#x6CE8;&#x518C;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x8FD4;&#x56DE;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x7ED3;&#x679C;&#xFF1B;<code>user</code>&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x9488;&#xFF0C;&#x5728;<code>callback</code>&#x4E2D;&#x4F1A;&#x56DE;&#x4F20;&#x7ED9;&#x7528;&#x6237;</li>
+<li><p>&#x8FD4;&#x56DE;&#xFF1A;&#x65E0;</p>
+<p><strong>12&#xFF09;&#x53D6;&#x6D88;&#x672C;&#x6B21;&#x8BED;&#x97F3;&#x8BC6;&#x522B;</strong></p>
+<p><code>void pal_asr_cancel();</code></p>
+</li>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x53D6;&#x6D88;&#x672C;&#x6B21;&#x7684;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x3002;</p>
+</li>
+<li>&#x5165;&#x53C2;&#xFF1A;&#x65E0;</li>
+<li><p>&#x8FD4;&#x56DE;&#xFF1A;&#x65E0;</p>
+<p><strong>13&#xFF09;&#x9500;&#x6BC1;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x7ED3;&#x679C;</strong></p>
+<p><code>void pal_rec_result_destroy(struct pal_rec_result *result);</code></p>
+</li>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;pal_asr_stop&#x548C;pal_asr_stop_async&#x8FD4;&#x56DE;&#x7684;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x7ED3;&#x679C;&#xFF0C;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x8BE5;&#x63A5;&#x53E3;&#x6765;&#x91CA;&#x653E;&#x8D44;&#x6E90;&#x3002;</p>
+</li>
+<li>&#x5165;&#x53C2;&#xFF1A;<code>result</code>&#x9700;&#x8981;&#x9500;&#x6BC1;&#x7684;&#x7ED3;&#x679C;</li>
+<li><p>&#x8FD4;&#x56DE;&#xFF1A;&#x65E0;</p>
+<p><strong>14&#xFF09;&#x6587;&#x672C;&#x8F6C;&#x8BED;&#x97F3;&#xFF08;&#x540C;&#x6B65;&#x63A5;&#x53E3;&#xFF09;</strong></p>
+<p><code>struct pal_rec_result* pal_get_tts(const char *text);</code></p>
+</li>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x63D0;&#x4F9B;&#x6587;&#x672C;&#x8F6C;&#x8BED;&#x97F3;&#x7684;&#x529F;&#x80FD;&#x3002;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;pal_rec_result&#x9700;&#x8981;&#x901A;&#x8FC7;pal_rec_result_destroy&#x9500;&#x6BC1;&#x3002;</p>
+</li>
+<li>&#x5165;&#x53C2;&#xFF1A;<code>text</code>&#x9700;&#x8981;&#x8F6C;&#x6362;&#x7684;&#x6587;&#x672C;</li>
+<li>&#x8FD4;&#x56DE;&#xFF1A;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#xFF0C;&#x6587;&#x672C;&#x8F6C;&#x8BED;&#x97F3;&#x7684;&#x7ED3;&#x679C;&#x5728;tts&#x5B57;&#x6BB5;&#x4E2D;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x64AD;&#x653E;&#x7684;url&#x3002;</li>
+</ul>
+<h2 id="&#x66F4;&#x591A;">&#x66F4;&#x591A;</h2>
+<p>&#x5173;&#x4E8E;AliOS Things&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;<a href="https://github.com/alibaba/AliOS-Things/wiki" target="_blank">https://github.com/alibaba/AliOS-Things/wiki</a> &#x5173;&#x4E8E;Link Voice&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;<a href="https://iot.aliyun.com/product/voice?spm=a2c2j.8959409.5007732.14.666018deKqxNU7" target="_blank">https://iot.aliyun.com/product/voice?spm=a2c2j.8959409.5007732.14.666018deKqxNU7</a></p>
+<footer class="page-footer"><span class="copyright">&#xA9; 2018  author. All rights reserved.</span><span class="footer-modification"><span id="busuanzi_container_site_uv" style="display:none">&#x672C;&#x7AD9;&#x8BBF;&#x5BA2;&#x6570; <span id="busuanzi_value_site_uv"></span> &#x4EBA;&#x6B21;</span></span></footer><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="yq-umesh-security.html" class="navigation navigation-prev " aria-label="Previous page: AliOS Things自组织网络安全认证架构概述">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="wiki-sig-ble-mesh.html" class="navigation navigation-next " aria-label="Next page: AliOS Things SIG BLE Mesh 搭建指南">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"阿里智能语音服务","level":"4.5.3","depth":2,"next":{"title":"AliOS Things SIG BLE Mesh 搭建指南","level":"4.5.4","depth":2,"path":"docs/ji-shu-wen-zhang/wiki-sig-ble-mesh.md","ref":"docs/ji-shu-wen-zhang/wiki-sig-ble-mesh.md","articles":[]},"previous":{"title":"AliOS Things自组织网络安全认证架构概述","level":"4.5.2","depth":2,"path":"docs/ji-shu-wen-zhang/yq-umesh-security.md","ref":"docs/ji-shu-wen-zhang/yq-umesh-security.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.2.3","theme":"default","variables":{},"plugins":["page-footer-copyright","livereload"],"pluginsConfig":{"page-footer-copyright":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/ji-shu-wen-zhang/yq-linkvoice.md","mtime":"2018-10-12T06:30:16.938Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-12T06:36:56.468Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

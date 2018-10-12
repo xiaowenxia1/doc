@@ -1,0 +1,1433 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>AliOS Things SIG BLE Mesh 搭建指南 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-footer-copyright/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="yq-iot-network-features.html" />
+    
+    
+    <link rel="prev" href="yq-linkvoice.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../introduction/alios-things-shi-shen-me.html">
+            
+                <a href="../../introduction/alios-things-shi-shen-me.html">
+            
+                    
+                    AliOS Things 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">快速开始</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../quickstart/quickstart/">
+            
+                <a href="../../quickstart/quickstart/">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../quickstart/quickstart/helloworld.html">
+            
+                <a href="../../quickstart/quickstart/helloworld.html">
+            
+                    
+                    第一个C应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../quickstart/quickstart/boneengine_firstjs.html">
+            
+                <a href="../../quickstart/quickstart/boneengine_firstjs.html">
+            
+                    
+                    第一个JS应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">文档</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../technical-overview.html">
+            
+                <a href="../technical-overview.html">
+            
+                    
+                    技术架构总览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../hardware/">
+            
+                <a href="../hardware/">
+            
+                    
+                    硬件支持
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../hardware/boards/">
+            
+                <a href="../hardware/boards/">
+            
+                    
+                    开发板
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1.1" data-path="../hardware/boards/starterkit.html">
+            
+                <a href="../hardware/boards/starterkit.html">
+            
+                    
+                    AliOS Things Starter Kit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.1.2" data-path="../hardware/boards/developerkit.html">
+            
+                <a href="../hardware/boards/developerkit.html">
+            
+                    
+                    AliOS Things Developer Kit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../components/">
+            
+                <a href="../components/">
+            
+                    
+                    组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../components/boneengine-lite-tech.html">
+            
+                <a href="../components/boneengine-lite-tech.html">
+            
+                    
+                    BoneEngine@Lite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.2" data-path="../components/yq-sal.html">
+            
+                <a href="../components/yq-sal.html">
+            
+                    
+                    AliOS Things 网络适配框架 - SAL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.3" data-path="../components/geng-duo-zu-jian.html">
+            
+                <a href="../components/geng-duo-zu-jian.html">
+            
+                    
+                    更多组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../kai-fa-gong-ju/">
+            
+                <a href="../kai-fa-gong-ju/">
+            
+                    
+                    开发工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.4.1" data-path="../kai-fa-gong-ju/be-cli-for-windows-install.html">
+            
+                <a href="../kai-fa-gong-ju/be-cli-for-windows-install.html">
+            
+                    
+                    如何在windows下准备be-cli应用开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.2" data-path="../kai-fa-gong-ju/yq-udcenter.html">
+            
+                <a href="../kai-fa-gong-ju/yq-udcenter.html">
+            
+                    
+                    uDevice Center - IoT弹性在线多设备开发平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.3" data-path="../kai-fa-gong-ju/yq-ci-system.html">
+            
+                <a href="../kai-fa-gong-ju/yq-ci-system.html">
+            
+                    
+                    AliOS Things 持续集成(CI)系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    技术文章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.1" data-path="articles-1.html">
+            
+                <a href="articles-1.html">
+            
+                    
+                    博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.2" data-path="yq-umesh-security.html">
+            
+                <a href="yq-umesh-security.html">
+            
+                    
+                    AliOS Things自组织网络安全认证架构概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.3" data-path="yq-linkvoice.html">
+            
+                <a href="yq-linkvoice.html">
+            
+                    
+                    阿里智能语音服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.5.4" data-path="wiki-sig-ble-mesh.html">
+            
+                <a href="wiki-sig-ble-mesh.html">
+            
+                    
+                    AliOS Things SIG BLE Mesh 搭建指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.5" data-path="yq-iot-network-features.html">
+            
+                <a href="yq-iot-network-features.html">
+            
+                    
+                    关于IoT网络的一些特征的探讨
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../certification/">
+            
+                <a href="../certification/">
+            
+                    
+                    认证
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.6.1" data-path="../certification/modules.html">
+            
+                <a href="../certification/modules.html">
+            
+                    
+                    认证模组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../release.html">
+            
+                <a href="../release.html">
+            
+                    
+                    版本发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">社区</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../community/community.html">
+            
+                <a href="../../community/community.html">
+            
+                    
+                    官方渠道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../community/contact.html">
+            
+                <a href="../../community/contact.html">
+            
+                    
+                    联系我们
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >AliOS Things SIG BLE Mesh 搭建指南</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="alios-things-sig-ble-mesh-&#x642D;&#x5EFA;&#x6307;&#x5357;">AliOS Things SIG BLE Mesh &#x642D;&#x5EFA;&#x6307;&#x5357;</h1>
+<h2 id="&#x786C;&#x4EF6;&#x51C6;&#x5907;">&#x786C;&#x4EF6;&#x51C6;&#x5907;</h2>
+<p>Raspberry PI3&#x4E00;&#x5757;</p>
+<p>&#x4E50;&#x946B;ESP32 Devkitc&#x4E24;&#x5757;</p>
+<p>&#x5FAE;&#x96EA;NRF51822&#x5F00;&#x53D1;&#x677F;&#x4E24;&#x5757;</p>
+<h2 id="&#x8F6F;&#x4EF6;&#x73AF;&#x5883;&#x642D;&#x5EFA;">&#x8F6F;&#x4EF6;&#x73AF;&#x5883;&#x642D;&#x5EFA;</h2>
+<p>&#x76EE;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x8FD0;&#x884C;&#x5728;Raspberry PI 3&#x4E0A;&#x7684;Bluez&#x4F5C;&#x4E3A;provisioner&#x3002;&#x8981;&#x5728;Raspberry PI3&#x4E0A;&#x8FD0;&#x884C;Bluez meshctl&#x4F5C;&#x4E3A;provisioner&#xFF0C;&#x9700;&#x8981;&#x5BF9;Raspberry PI&#x7684;&#x7F16;&#x8BD1;&#x9009;&#x9879;&#x8FDB;&#x884C;&#x8C03;&#x6574;&#xFF0C;&#x4F7F;&#x80FD;&#x4E00;&#x4E9B;&#x5B89;&#x5168;&#x76F8;&#x5173;&#x7279;&#x6027;&#xFF0C;&#x624D;&#x80FD;&#x591F;&#x6B63;&#x5E38;&#x8FD0;&#x884C;meshctl&#x3002;&#x5728;linux&#x4E0A;&#x4EA4;&#x53C9;&#x7F16;&#x8BD1;Raspberry PI kernel&#x3002;</p>
+<h3 id="raspberry-pi-kernel">Raspberry PI kernel</h3>
+<p>&#x76EE;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x8FD0;&#x884C;&#x5728;Raspberry PI 3&#x4E0A;&#x7684;Bluez&#x4F5C;&#x4E3A;provisioner&#x3002;&#x8981;&#x5728;Raspberry PI3&#x4E0A;&#x8FD0;&#x884C;Bluez meshctl&#x4F5C;&#x4E3A;provisioner&#xFF0C;&#x9700;&#x8981;&#x5BF9;Raspberry PI&#x7684;&#x7F16;&#x8BD1;&#x9009;&#x9879;&#x8FDB;&#x884C;&#x8C03;&#x6574;&#xFF0C;&#x4F7F;&#x80FD;&#x4E00;&#x4E9B;&#x5B89;&#x5168;&#x76F8;&#x5173;&#x7279;&#x6027;&#xFF0C;&#x624D;&#x80FD;&#x591F;&#x6B63;&#x5E38;&#x8FD0;&#x884C;meshctl&#x3002;&#x5728;linux&#x4E0A;&#x4EA4;&#x53C9;&#x7F16;&#x8BD1;Raspberry PI kernel&#x3002;</p>
+<p>&#x4E0B;&#x8F7D;Raspberry PI&#x7CFB;&#x7EDF;&#x6E90;&#x4EE3;&#x7801;</p>
+<p><code>git clone https://github.com/raspberrypi/linux.git</code></p>
+<p>&#x8BBE;&#x7F6E;&#x4EA4;&#x53C9;&#x7F16;&#x8BD1;&#x5DE5;&#x5177;&#x94FE;&#x8DEF;&#x5F84;&#x3002;</p>
+<pre><code class="lang-text">`luwang@ubuntu:~/raspberry-pi/linux$ export CCPREFIX=/home/luwang/raspberry-pi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian/bin/arm-linux-gnueabihf- 
+luwang@ubuntu:~/raspberry-pi/linux$ ${CCPREFIX}gcc -v
+Using built-in specs.
+COLLECT_GCC=/home/luwang/raspberry-pi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian/bin/arm-linux-gnueabihf-gcc
+COLLECT_LTO_WRAPPER=/home/luwang/raspberry-pi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.3/lto-wrapper
+Target: arm-linux-gnueabihf
+Configured with: /cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-raspbian-linux/.build/src/gcc-linaro-4.8-2014.01/configure --build=i686-build_pc-linux-gnu --host=i686-build_pc-linux-gnu --target=arm-linux-gnueabihf --prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-raspbian-linux/install --with-sysroot=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-raspbian-linux/install/arm-linux-gnueabihf/libc --enable-languages=c,c++,fortran --disable-multilib --enable-multiarch --with-arch=armv6 --with-tune=arm1176jz-s --with-fpu=vfp --with-float=hard --with-pkgversion=&apos;crosstool-NG linaro-1.13.1-4.8-2014.01 - Linaro GCC 2013.11&apos; --with-bugurl=https://bugs.launchpad.net/gcc-linaro --enable-__cxa_atexit --enable-libmudflap --enable-libgomp --enable-libssp --with-gmp=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-raspbian-linux/.build/arm-linux-gnueabihf/build/static --with-mpfr=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-raspbian-linux/.build/arm-linux-gnueabihf/build/static --with-mpc=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-raspbian-linux/.build/arm-linux-gnueabihf/build/static --with-isl=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-raspbian-linux/.build/arm-linux-gnueabihf/build/static --with-cloog=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-raspbian-linux/.build/arm-linux-gnueabihf/build/static --with-libelf=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-raspbian-linux/.build/arm-linux-gnueabihf/build/static --enable-threads=posix --disable-libstdcxx-pch --enable-linker-build-id --enable-plugin --enable-gold --with-local-prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-raspbian-linux/install/arm-linux-gnueabihf/libc --enable-c99 --enable-long-long --with-float=hard
+Thread model: posix
+gcc version 4.8.3 20140106 (prerelease) (crosstool-NG linaro-1.13.1-4.8-2014.01 - Linaro GCC 2013.11) 
+luwang@ubuntu:~/raspberry-pi/linux$`
+</code></pre>
+<p>&#x83B7;&#x53D6;kernel&#x7F16;&#x8BD1;&#x6587;&#x4EF6;.config&#x3002;&#x8FD9;&#x91CC;&#x4ECE;&#x73B0;&#x6709;&#x7684;Raspberry PI&#x4E0A;&#x83B7;&#x53D6;&#x5185;&#x6838;&#x7F16;&#x8BD1;&#x7684;.config&#x3002;Raspberry PI&#x4E0A;&#x5B89;&#x88C5;&#x7684;&#x955C;&#x50CF;&#x662F;2017-11-29-raspbian-stretch.img&#x3002;</p>
+<p>&#x5728;Raspberry PI&#x4E0A;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF0C;&#x751F;&#x6210;&#x5185;&#x6838;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<p><code>sudo modprobe configs</code></p>
+<p>&#x5728;linux&#x673A;&#x5668;&#x4E0A;&#x62F7;&#x8D1D;&#x751F;&#x6210;&#x7684;Raspberry PI kernel&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x89E3;&#x538B;&#x3002;</p>
+<p><code>scp pi@raspberrypi:/proc/config.gz PATH_TO_RASPBERRY_PI/linux gunzip -c config.gz &gt; .config</code></p>
+<p>&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#x9009;&#x9879;</p>
+<pre><code class="lang-text">`CONFIG_CRYPTO_CMAC=y
+CONFIG_CRYPTO_USER_API=y
+CONFIG_CRYPTO_USER_API_HASH=y
+CONFIG_CRYPTO_USER_API_SKCIPHER=y`
+</code></pre>
+<p>&#x7F16;&#x8BD1;&#x751F;&#x6210;&#x5185;&#x6838;</p>
+<pre><code class="lang-text">`cd PATH_TO_RASPBERRY_PI/linux
+ARCH=arm CROSS_COMPILE=${CCPREFIX} make`
+</code></pre>
+<p>&#x751F;&#x6210;&#x5185;&#x6838;modules</p>
+<p><code>ARCH=arm CROSS_COMPILE=${CCPREFIX} INSTALL_MOD_PATH=../modules make modules_install</code></p>
+<p>&#x5F97;&#x5230;&#x4EE5;&#x4E0B;log&#x4FE1;&#x606F;</p>
+<pre><code class="lang-text">`  INSTALL sound/soc/codecs/snd-soc-tas5713.ko
+  INSTALL sound/soc/codecs/snd-soc-tpa6130a2.ko
+  INSTALL sound/soc/codecs/snd-soc-wm-adsp.ko
+  INSTALL sound/soc/codecs/snd-soc-wm5102.ko
+  INSTALL sound/soc/codecs/snd-soc-wm8731.ko
+  INSTALL sound/soc/codecs/snd-soc-wm8741.ko
+  INSTALL sound/soc/codecs/snd-soc-wm8804-i2c.ko
+  INSTALL sound/soc/codecs/snd-soc-wm8804.ko
+  INSTALL sound/soc/generic/snd-soc-simple-card-utils.ko
+  INSTALL sound/soc/generic/snd-soc-simple-card.ko
+  INSTALL sound/soc/snd-soc-core.ko
+  INSTALL sound/usb/6fire/snd-usb-6fire.ko
+  INSTALL sound/usb/caiaq/snd-usb-caiaq.ko
+  INSTALL sound/usb/misc/snd-ua101.ko
+  INSTALL sound/usb/snd-usb-audio.ko
+  INSTALL sound/usb/snd-usbmidi-lib.ko
+  INSTALL .modules/lib/firmware/emi26/loader.fw
+  INSTALL .modules/lib/firmware/emi26/firmware.fw
+  INSTALL .modules/lib/firmware/emi26/bitstream.fw
+  INSTALL .modules/lib/firmware/emi62/loader.fw
+  INSTALL .modules/lib/firmware/emi62/bitstream.fw
+  INSTALL .modules/lib/firmware/emi62/spdif.fw
+  INSTALL .modules/lib/firmware/emi62/midi.fw
+  INSTALL .modules/lib/firmware/kaweth/new_code.bin
+  INSTALL .modules/lib/firmware/kaweth/trigger_code.bin
+  INSTALL .modules/lib/firmware/kaweth/new_code_fix.bin
+  INSTALL .modules/lib/firmware/kaweth/trigger_code_fix.bin
+  INSTALL .modules/lib/firmware/ti_3410.fw
+  INSTALL .modules/lib/firmware/ti_5052.fw
+  INSTALL .modules/lib/firmware/mts_cdma.fw
+  INSTALL .modules/lib/firmware/mts_gsm.fw
+  INSTALL .modules/lib/firmware/mts_edge.fw
+  INSTALL .modules/lib/firmware/edgeport/boot.fw
+  INSTALL .modules/lib/firmware/edgeport/boot2.fw
+  INSTALL .modules/lib/firmware/edgeport/down.fw
+  INSTALL .modules/lib/firmware/edgeport/down2.fw
+  INSTALL .modules/lib/firmware/edgeport/down3.bin
+  INSTALL .modules/lib/firmware/whiteheat_loader.fw
+  INSTALL .modules/lib/firmware/whiteheat.fw
+  INSTALL .modules/lib/firmware/keyspan_pda/keyspan_pda.fw
+  INSTALL .modules/lib/firmware/keyspan_pda/xircom_pgs.fw
+  INSTALL .modules/lib/firmware/cpia2/stv0672_vp4.bin
+  INSTALL .modules/lib/firmware/yam/1200.bin
+  INSTALL .modules/lib/firmware/yam/9600.bin
+  DEPMOD  4.9.77-v7+
+luwang@ubuntu:~/raspberry-pi/linux$ `
+</code></pre>
+<p>&#x4E0A;&#x534A;&#x90E8;log&#x7531;&#x4E8E;&#x7BC7;&#x5E45;&#x539F;&#x56E0;&#x7701;&#x7565;&#x3002;&#x8FD9;&#x91CC;&#x8BB0;&#x4F4F;&#x7248;&#x672C;&#x4FE1;&#x606F;&#x662F;4.9.77-v7+&#x3002;</p>
+<p>&#x5728;linux&#x673A;&#x5668;&#x4E0A;&#xFF0C;&#x4ECE;linux&#x62F7;&#x8D1D;&#x751F;&#x6210;&#x7684;kernel&#x5230;Raspberry PI</p>
+<p><code>cd PATH_TO_RASPBERRY_PI/linux/arch/arm/boot/zImage pi@RASPBARRY:/tmp/kernel_new.img</code></p>
+<p>&#x5728;linux&#x673A;&#x5668;&#x4E0A;&#xFF0C;&#x4ECE;linux&#x62F7;&#x8D1D;&#x751F;&#x6210;&#x7684;modules&#x5230;Raspberry PI</p>
+<pre><code class="lang-text">`cd PATH_TO_RASPBERRY_PI/modules
+tar czf modules.tgz *
+scp modules.tgz pi@RASPBERRY:/tmp`
+</code></pre>
+<p>&#x5C06;&#x62F7;&#x8D1D;&#x5230;Raspberry PI&#x4E0A;&#x7684;kernel&#x548C;modules&#x79FB;&#x52A8;&#x5230;boot&#x548C;lib&#x4E0B;&#x9762;</p>
+<pre><code class="lang-text">`sudo cp /tmp/kernel_new.img /boot
+sudo tar zxf /tmp/modules.tgz
+sudo cp -rf /tmp/lib/firmware /lib/firmware
+sudo cp -rf /tmp/lib/modules /lib/modules`
+</code></pre>
+<p>&#x5728;Raspberry PI&#x542F;&#x52A8;&#x914D;&#x7F6E;&#x6587;&#x4EF6;config.tx&#xFF0C;&#x6587;&#x4EF6;&#x6700;&#x540E;&#x9762;&#x52A0;&#x5165;&#x4E0B;&#x9762;&#x5185;&#x5BB9;&#xFF0C;&#x6307;&#x5B9A;&#x4ECE;&#x521A;&#x751F;&#x6210;&#x7684;kernel_new.img&#x4E2D;&#x542F;&#x52A8;&#x3002;</p>
+<p><code>kernel=kernel_new.img</code></p>
+<p>&#x91CD;&#x542F;Raspberry PI</p>
+<p><code>sudo shutdown -r now</code></p>
+<p>&#x786E;&#x8BA4;&#x5185;&#x6838;&#x4FE1;&#x606F;&#x5DF2;&#x7ECF;&#x66F4;&#x65B0;&#x4E3A;&#x65B0;&#x751F;&#x6210;&#x7684;kernel</p>
+<p><code>uname -r 4.9.77-v7+</code></p>
+<p>&#x5B89;&#x88C5;&#x540E;&#x7EED;&#x6240;&#x9700;&#x4F9D;&#x8D56;</p>
+<pre><code class="lang-text">`sudo apt-get update
+sudo apt-get install -y libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev autotools-dev automake libtool`
+</code></pre>
+<h3 id="json-c">json-c</h3>
+<p>&#x4E0B;&#x8F7D;json-c&#x6E90;&#x4EE3;&#x7801;</p>
+<p><code>git clone https://github.com/json-c/json-c.git</code></p>
+<p>&#x7F16;&#x8BD1;&#x5E76;&#x5B89;&#x88C5;</p>
+<pre><code class="lang-text">`cd PATH_TO_JSON_C
+sh autogen.sh
+./configure
+make
+sudo make install`
+</code></pre>
+<h3 id="bluez">Bluez</h3>
+<p>&#x4ECE;&#x4EE5;&#x4E0B;&#x94FE;&#x63A5;&#x4E0B;&#x8F7D;bluez-5.48.tar.gz&#xFF0C;&#x5E76;&#x89E3;&#x538B;&#x5230;&#x672C;&#x5730;&#x76EE;&#x5F55;</p>
+<pre><code class="lang-text">`https://git.kernel.org/pub/scm/bluetooth/bluez.git
+tar xvf bluez-5.48.tar.gz`
+</code></pre>
+<p>&#x4FEE;&#x6539;mesh gatt&#x5728;&#x5904;&#x7406;&#x6570;&#x636E;&#x5206;&#x6BB5;&#x65F6;&#x7684;&#x903B;&#x8F91;&#xFF0C;diff&#x5982;&#x4E0B;</p>
+<pre><code class="lang-text">`luwang@ubuntu:~/bluez$ git diff mesh/gatt.c
+diff --git a/mesh/gatt.c b/mesh/gatt.c
+index 9116a9d..8d564a9 100644
+--- a/mesh/gatt.c
++++ b/mesh/gatt.c
+@@ -393,7 +393,10 @@ static bool pipe_read(struct io *io, bool prov, void *user_data)
+                        break;
+
+                res = buf;
+   -               mesh_gatt_sar(&amp;res, len);
+   +               len = mesh_gatt_sar(&amp;res, len);
+   +                if (len == 0) {
+   +                    break;
+   +                }
+
+                if (prov)
+                        prov_data_ready(node, res, len);`
+</code></pre>
+<p>&#x7F16;&#x8BD1;&#x5B89;&#x88C5;</p>
+<pre><code class="lang-text">`cd PATH_TO_BLUEZ
+./bootstrap
+./configure --enable-mesh --enable-debug
+make
+sudo make install`
+</code></pre>
+<h3 id="bluetooth-controller">Bluetooth controller</h3>
+<p>Bluetooth controller&#x4F7F;&#x7528;&#x7684;&#x662F;zephyr&#x7684;bluetooth/hci_uart&#x5E94;&#x7528;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x5206;&#x652F;branch&#x662F;v1.10-branch&#x3002;</p>
+<p>&#x4FEE;&#x6539;&#x4E32;&#x53E3;&#x6CE2;&#x7279;&#x7387;&#x4E3A;115200.</p>
+<pre><code class="lang-text">`luwang@ubuntu:~/zephyr/samples/bluetooth/hci_uart$ git diff nrf5.conf
+diff --git a/samples/bluetooth/hci_uart/nrf5.conf b/samples/bluetooth/hci_uart/nrf5.conf
+index 4a507be..9aea95f 100644
+ --- a/samples/bluetooth/hci_uart/nrf5.conf
+ +++ b/samples/bluetooth/hci_uart/nrf5.conf
+@@ -4,7 +4,7 @@ CONFIG_UART_CONSOLE=n
+ CONFIG_GPIO=y
+ CONFIG_SERIAL=y
+ CONFIG_UART_INTERRUPT_DRIVEN=y
+ -CONFIG_UART_NRF5_BAUD_RATE=1000000
+ +CONFIG_UART_NRF5_BAUD_RATE=115200
+ CONFIG_UART_NRF5_FLOW_CONTROL=y
+ CONFIG_MAIN_STACK_SIZE=512
+ CONFIG_SYSTEM_WORKQUEUE_STACK_SIZE=51`
+</code></pre>
+<h3 id="server&#x7AEF;&#x548C;client&#x7AEF;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;">Server&#x7AEF;&#x548C;Client&#x7AEF;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;</h3>
+<p>&#x4E0B;&#x8F7D;AliOS-Things&#x6E90;&#x4EE3;&#x7801;</p>
+<p><code>git clone git@github.com:alibaba/AliOS-Things.git</code></p>
+<p>&#x7F16;&#x8BD1;&#x751F;&#x6210;Server&#x7AEF;&#x5E94;&#x7528;</p>
+<pre><code class="lang-text">`cd PATH_TO_AOS
+aos make bluetooth.blemesh_srv@esp32devkitc hci_h4=1`
+</code></pre>
+<p>&#x7F16;&#x8BD1;&#x751F;&#x6210;Client&#x7AEF;&#x5E94;&#x7528;</p>
+<p><code>cd PATH_TO_AOS aos make bluetooth.blemesh_cli@esp32devkitc hci_h4=1</code></p>
+<p>&#x5C06;&#x751F;&#x6210;&#x7684;&#x955C;&#x50CF;&#x5229;&#x7528;esptool&#x70E7;&#x5F55;&#x5230;ESP32.</p>
+<h2 id="&#x6E29;&#x5EA6;&#x76D1;&#x6D4B;&#x7F51;&#x7EDC;&#x7684;&#x642D;&#x5EFA;">&#x6E29;&#x5EA6;&#x76D1;&#x6D4B;&#x7F51;&#x7EDC;&#x7684;&#x642D;&#x5EFA;</h2>
+<p>&#x6E29;&#x5EA6;&#x76D1;&#x6D4B;&#x7F51;&#x7EDC;&#x5305;&#x62EC;&#x4E09;&#x79CD;&#x89D2;&#x8272;&#xFF0C;provisioner&#xFF0C;server&#x548C;client&#x3002;Server&#x662F;&#x6E29;&#x5EA6;&#x4FE1;&#x606F;&#x7684;&#x53D1;&#x5E03;&#x8005;&#xFF0C;client&#x662F;&#x6E29;&#x5EA6;&#x4FE1;&#x606F;&#x7684;&#x8BA2;&#x9605;&#x8005;&#x3002;</p>
+<h3 id="provisioning&#x548C;&#x914D;&#x7F6E;server&#x8282;&#x70B9;">Provisioning&#x548C;&#x914D;&#x7F6E;Server&#x8282;&#x70B9;</h3>
+<p>&#x5728;Raspberry PI&#x4E0A;&#xFF0C;&#x8FD0;&#x884C;&#x5E76;&#x8FDB;&#x5165;meshctl&#x547D;&#x4EE4;&#x884C;</p>
+<pre><code class="lang-text">`pi@raspberrypi:~/bluez-5.48/mesh $ ./meshctl .
+Local config directory not provided.
+  netkeys = 1
+  appkeys = 2
+  provisioners = 1
+On/Off client model: new binding 0001
+[NEW] Controller B8:27:EB:B2:E7:4A raspberrypi [default]
+[NEW] Device EC:60:BA:B5:36:D0 AOS Device
+Service added /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a
+Char added /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000d:
+Char added /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000b:
+Service added /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service0006`
+</code></pre>
+<p>server&#x8282;&#x70B9;&#x4E0A;&#x7535;&#xFF0C;&#x5E76;&#x5F00;&#x542F;&#x53D1;&#x73B0;unprovisioned &#x8BBE;&#x5907;&#x6A21;&#x5F0F;&#xFF0C;&#x53D1;&#x73B0;&#x65B0;unprovisioned&#x8BBE;&#x5907;</p>
+<pre><code class="lang-text">`[meshctl]# discover-unprovisioned on
+SetDiscoveryFilter success
+Discovery started
+Adapter property changed 
+[CHG] Controller B8:27:EB:B2:E7:4A Discovering: yes
+        Mesh Provisioning Service (00001827-0000-1000-8000-00805f9b34fb)
+            Device UUID: dddd0000000000000000000000000000
+            OOB: 0000`
+</code></pre>
+<p>&#x8BA4;&#x8BC1;&#x8BE5;&#x8BBE;&#x5907;</p>
+<pre><code class="lang-text">`[meshctl]# provision dddd
+Trying to connect Device EC:60:BA:B5:36:D0 AOS Device
+Adapter property changed 
+[CHG] Controller B8:27:EB:B2:E7:4A Discovering: no
+Connection successful
+Services resolved yes
+Found matching char: path /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000b, uuid 00002adb-0000-1000-8000-00805f9b34fb
+Found matching char: path /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000d, uuid 00002adc-0000-1000-8000-00805f9b34fb
+Start notification on /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000d
+Characteristic property changed /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000d
+AcquireNotify success: fd 7 MTU 65
+Notify for Mesh Provisioning Out Data started
+Open-Node: 0x1758dc8
+Open-Prov: 0x1757598
+Open-Prov: proxy 0x175a1c8
+Initiated provisioning
+Characteristic property changed /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000b
+AcquireWrite success: fd 8 MTU 65
+GATT-TX:     03 00 10 
+GATT-RX:     03 01 01 00 01 00 00 04 00 08 00 00 00 
+Got provisioning data (12 bytes)
+     01 01 00 01 00 00 04 00 08 00 00 00 
+GATT-TX:     03 02 00 00 02 03 04 
+GATT-TX:     03 03 09 da d3 a0 1e 4f 15 34 3c 1f 88 e2 1f 93 
+GATT-TX:     f6 38 9b 8a 2d 3a a0 49 7a 0b 01 c6 5c 61 d9 cc 
+GATT-TX:     49 be 26 78 5c 5c de c1 05 86 6f 5a 88 0d 93 b8 
+GATT-TX:     60 e2 77 67 3d 72 f4 46 b4 5f d3 b1 87 53 cd 96 
+GATT-TX:     fc ce 
+GATT-RX:     43 03 d2 68 da 6f fe cc f8 97 0e 99 84 e6 eb 93 
+GATT-RX:     15 15 aa 1d 15 5b 2a f2 e7 1f 4d c1 93 51 14 29 
+GATT-RX:     7e b7 75 0c 8d 5a 51 c8 14 29 8d 3a 73 de fa 95 
+GATT-RX:     09 42 7e 7f 0a be e2 ed e5 ff 27 43 26 f7 
+GATT-RX:     c3 ab 8b ef 6f 
+Got provisioning data (65 bytes)
+     03 d2 68 da 6f fe cc f8 97 0e 99 84 e6 eb 93 15 
+     15 aa 1d 15 5b 2a f2 e7 1f 4d c1 93 51 14 29 7e 
+     b7 75 0c 8d 5a 51 c8 14 29 8d 3a 73 de fa 95 09 
+     42 7e 7f 0a be e2 ed e5 ff 27 43 26 f7 ab 8b ef 
+     6f 
+Request decimal key (0 - 9999)
+[AOS 1m[mesh] Enter Numeric key: `
+</code></pre>
+<p>&#x67E5;&#x770B;server&#x547D;&#x4EE4;&#x884C;OOB&#x8F93;&#x51FA;</p>
+<pre><code class="lang-text">`Initializing...
+Bluetooth initialized
+Server
+Mesh initialized
+attention_on()
+OOB Number: 9023
+attention_off()`
+</code></pre>
+<p>&#x5728;Raspberry PI&#x4E0A;&#x952E;&#x5165;9023&#xFF0C;&#x8FDB;&#x884C;&#x540E;&#x7EED;provision&#xFF0C;&#x540E;&#x7EED;&#x4F1A;&#x6253;&#x5370;&#x4E00;&#x957F;&#x4E32;log</p>
+<pre><code class="lang-text">`[AOS 1m[mesh] Enter Numeric key: 9023
+GATT-TX:     03 05 fe 7f b1 04 84 f6 e9 0d 9e c7 62 19 6d 1f 
+GATT-TX:     03 64 
+GATT-RX:     03 05 ca f5 8e 55 ff 1d 92 86 26 fa 8e 22 8c 33 
+GATT-RX:     69 80 
+Got provisioning data (17 bytes)
+     05 ca f5 8e 55 ff 1d 92 86 26 fa 8e 22 8c 33 69 
+     80 
+GATT-TX:     03 06 d6 63 cd 7c e6 3b b5 9b 2b a3 f5 3e e6 7c 
+GATT-TX:     15 f1 
+GATT-RX:     03 06 7a 94 aa 7a 3b f3 1c 33 92 cf 8a 3c 86 ec 
+GATT-RX:     9d 0c 
+Got provisioning data (17 bytes)
+     06 7a 94 aa 7a 3b f3 1c 33 92 cf 8a 3c 86 ec 9d 
+     0c 
+Confirmation Validated
+S-Key     5e ee f5 44 72 cc 88 c7 3a 9a 56 db 11 4a d5 44 
+S-Nonce     82 b4 a8 f2 7b 9b 76 c7 72 8b 3f e2 07 
+DevKey     f8 a9 4d 78 25 b8 47 3d 0d 3d 20 50 91 45 db 20 
+Data     18 ee d9 c2 a5 6a dd 85 04 9f fc 3c 59 ad 0e 12 
+Data     00 00 00 00 00 00 05 01 00 
+DataEncrypted + mic     b7 8a f4 17 c3 e8 05 66 84 4d d6 5e 22 69 73 1c 
+DataEncrypted + mic     90 10 91 8c 5f f7 30 55 bf d1 1c 29 e9 d6 3e 78 
+DataEncrypted + mic     f1 
+GATT-TX:     03 07 b7 8a f4 17 c3 e8 05 66 84 4d d6 5e 22 69 
+GATT-TX:     73 1c 90 10 91 8c 5f f7 30 55 bf d1 1c 29 e9 d6 
+GATT-TX:     3e 78 f1 
+GATT-RX:     03 08 
+Got provisioning data (1 bytes)
+     08 
+Provision success. Assigned Primary Unicast 0100
+Attempting to disconnect from EC:60:BA:B5:36:D0
+Characteristic property changed /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000d
+Write closed
+Service added /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a
+Char added /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000b:
+Char added /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000d:
+Services resolved no
+SetDiscoveryFilter success
+Discovery started
+Adapter property changed 
+[CHG] Controller B8:27:EB:B2:E7:4A Discovering: yes
+
+        Mesh Proxy Service (00001828-0000-1000-8000-00805f9b34fb)
+        Identity for node 0100
+Trying to connect to mesh
+Adapter property changed 
+[CHG] Controller B8:27:EB:B2:E7:4A Discovering: no
+Connection successful
+Services resolved yes
+Found matching char: path /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000b, uuid 00002add-0000-1000-8000-00805f9b34fb
+Found matching char: path /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000d, uuid 00002ade-0000-1000-8000-00805f9b34fb
+Start notification on /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000d
+Characteristic property changed /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000d
+AcquireNotify success: fd 7 MTU 65
+Notify for Mesh Proxy Out Data started
+Trying to open mesh session
+GATT-RX:     01 01 00 d4 76 79 43 3f db 10 4a 00 00 00 05 f4 
+GATT-RX:     0a 41 fa b0 af 32 0b 
+iv_upd_state = IV_UPD_NORMAL
+Mesh session is open
+Characteristic property changed /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000b
+AcquireWrite success: fd 8 MTU 65
+GATT-TX:     02 f4 9e 64 99 fe 13 cd c8 9b 0e 1c e5 61 82 cc 
+GATT-TX:     ab f5 83 70 
+GATT-TX:     00 f4 b3 a6 53 65 b2 a0 cd 7a 74 9e 95 1d b7 13 
+GATT-TX:     06 e6 48 68 d5 5c 
+GATT-RX:     02 f4 e7 02 fe d4 84 81 a3 32 e7 6e 4b 1b 74 4a 
+GATT-RX:     13 95 f5 61 7f eb 
+Proxy Whitelist filter length: 0
+GATT-RX:     00 f4 60 4f af f8 ba 30 1f a6 70 d9 cb 5f 12 dd 
+GATT-RX:     8b 0b 71 6b 68 ad 00 90 07 cf ec e0 28 fe 
+GATT-RX:     00 f4 2a e4 87 bb f8 21 34 0d 45 4c c3 de 5b e3 
+GATT-RX:     21 bb 57 9a 34 94 5a de 4d e8 ca c8 91 cd 
+GATT-RX:     00 f4 b7 a0 67 ff da 92 a3 32 4c c2 c2 4e a5 5c 
+GATT-RX:     7f 12 c7 5f 02 bc 0b 23 9f 13 
+    Composition data for node 0100 {
+  &quot;cid&quot;:&quot;0002&quot;,
+  &quot;pid&quot;:&quot;0000&quot;,
+  &quot;vid&quot;:&quot;0000&quot;,
+  &quot;crpl&quot;:&quot;0005&quot;,
+  &quot;features&quot;:{
+    &quot;relay&quot;:false,
+    &quot;proxy&quot;:true,
+    &quot;friend&quot;:false,
+    &quot;lpn&quot;:false
+  },
+  &quot;elements&quot;:[
+    {
+      &quot;elementIndex&quot;:0,
+      &quot;location&quot;:&quot;0000&quot;,
+      &quot;models&quot;:[
+        &quot;0000&quot;,
+        &quot;0001&quot;,
+        &quot;0002&quot;,
+        &quot;1100&quot;
+      ]
+    }
+  ]
+}
+GATT-TX:     00 f4 2b d6 e6 46 66 5b 65 31 1d 78 08 28 5d 16 
+GATT-TX:     aa e2 97 b6 18 84 1f 29 7f `
+</code></pre>
+<p>&#x4E0A;&#x8FF0;log&#x5206;&#x4E3A;&#x4E24;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x9636;&#x6BB5;&#x662F;&#x5229;&#x7528;provisioning connection&#x8FDB;&#x884C;provision&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x9636;&#x6BB5;&#x662F;&#x5EFA;&#x7ACB;mesh proxy connection&#xFF0C;&#x540E;&#x7EED;&#x9700;&#x8981;&#x5728;&#x8FD9;&#x4E2A;connection&#x4E0A;&#x4F20;&#x8F93;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x5F53;&#x4E0A;&#x8FF0;log&#x5B8C;&#x6574;&#x6253;&#x5370;&#x540E;&#xFF0C;server&#x7AEF;&#x4F1A;&#x6253;&#x5370;provision&#x6210;&#x529F;&#x5B8C;&#x6210;&#x7684;&#x4FE1;&#x606F;</p>
+<pre><code class="lang-text">`Provisioning completed!
+Net ID: 0
+Unicast addr: 0x0100`
+</code></pre>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x662F;&#x5728;&#x521A;&#x624D;&#x5EFA;&#x7ACB;&#x7684;mesh proxy connection&#x4E0A;&#x4F20;&#x9012;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x4FE1;&#x606F;</p>
+<p>&#x9996;&#x5148;&#x662F;&#x8FDB;&#x5165;&#x83DC;&#x5355;</p>
+<pre><code class="lang-text">`[AOS Devic-Node-0100]# menu config
+Menu config:
+Available commands:
+-------------------
+target &lt;unicast&gt;                                  Set target node to configure
+composition-get [page_num]                        Get Composition Data
+netkey-add &lt;net_idx&gt;                              Add network key
+netkey-del &lt;net_idx&gt;                              Delete network key
+appkey-add &lt;app_idx&gt;                              Add application key
+appkey-del &lt;app_idx&gt;                              Delete application key
+bind &lt;ele_idx&gt; &lt;app_idx&gt; &lt;mod_id&gt; [cid]           Bind app key to a model
+ttl-set &lt;ttl&gt;                                     Set default TTL
+ttl-get                                           Get default TTL
+pub-set &lt;ele_addr&gt; &lt;pub_addr&gt; &lt;app_idx&gt; &lt;per (step|res)&gt; &lt;re-xmt (cnt|per)&gt; &lt;mod id&gt; [cid] 
+                          Set publication
+pub-get &lt;ele_addr&gt; &lt;model&gt;                        Get publication
+proxy-set &lt;proxy&gt;                                 Set proxy state
+proxy-get                                         Get proxy state
+ident-set &lt;net_idx&gt; &lt;state&gt;                       Set node identity state
+ident-get &lt;net_idx&gt;                               Get node identity state
+relay-set &lt;relay&gt; &lt;rexmt count&gt; &lt;rexmt steps&gt;     Set relay
+relay-get                                         Get relay
+hb-pub-set &lt;pub_addr&gt; &lt;count&gt; &lt;period&gt; &lt;features&gt; &lt;net_idx&gt; Set heartbeati publish
+sub-add &lt;ele_addr&gt; &lt;sub_addr&gt; &lt;model id&gt;          Subscription add
+sub-get &lt;ele_addr&gt; &lt;model id&gt;                     Subscription get
+app-get &lt;ele_addr&gt; &lt;model id&gt;                     Get App Keys
+back                                              Return to main menu
+version                                           Display version
+quit                                              Quit program
+exit                                              Quit program
+help                                              Display help about this program`
+</code></pre>
+<p>&#x9009;&#x62E9;&#x914D;&#x7F6E;&#x8282;&#x70B9;&#xFF0C;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8282;&#x70B9;ucast addr&#x662F;0x0100</p>
+<pre><code class="lang-text">[AOS Devic-Node-0100]# target 0100
+
+Configuring node 0100
+
+[config: Target = 0100]# target 0100[config: Target = 0100]#
+</code></pre>
+<p>&#x914D;&#x7F6E;app key</p>
+<pre><code class="lang-text">`[config: Target = 0100]# target 0100[config: Target = 0100]# appkey-add 1
+GATT-TX:     00 f4 e5 ca a3 ba 03 7b db 7f a6 aa 7c 02 25 75 
+GATT-TX:     6b 2a cf d4 93 0a 02 c3 8d 22 7d 30 ee 21 
+GATT-TX:     00 f4 41 5a 17 27 bf 6f 70 59 1e 4e 60 2d be 4f 
+GATT-TX:     1e f9 0d 88 e1 d6 c1 50 f3 51 cc 6d 43 d8 
+GATT-RX:     00 f4 04 00 5a d6 cc af 78 b3 eb 70 e5 78 e9 1b 
+GATT-RX:     87 fc 43 8c b0 ad 90 a2 7a 
+GATT-RX:     00 f4 56 a5 24 11 02 10 62 67 45 42 77 77 3a 7a 
+GATT-RX:     ec 3e 8f 2f 26 56 4f d3 ba 
+Node 0100 AppKey Status Success
+    NetKey 000, AppKey 001`
+
+&#x5C06;server&#x8282;&#x70B9;&#x7684;element 0&#x7684;sensor server model (0x1100)&#x7ED1;&#x5B9A;&#x5230;app key index =1&#x7684;app key&#x4E0A;
+
+`[config: Target = 0100]# bind 0 1 1100
+GATT-TX:     00 f4 cb 2a f4 45 0f 4d 25 b0 47 d8 15 72 ba 89 
+GATT-TX:     61 fc ec 15 7e fe 8c dc 30 e6 04 
+GATT-RX:     00 f4 af 08 09 a9 12 03 dd fa df 1a 5f e4 7e c1 
+GATT-RX:     4f c8 58 84 82 77 8c 62 d1 cb 59 f9 
+Node 0100 Model App Status Success
+    Element 0100 AppIdx 001
+ModelId 1100`
+</code></pre>
+<p>&#x589E;&#x52A0;sensor server model (0x1100)&#x8BA2;&#x9605;&#x53D1;&#x5E03;&#x5730;&#x5740;0xc000&#x7684;&#x4FE1;&#x606F;</p>
+<pre><code class="lang-text">`[config: Target = 0100]# sub-add 0100 c000 1100
+GATT-TX:     00 f4 fe fa 07 e1 60 7a 1a ac d1 26 3a 45 8e f7 
+GATT-TX:     5e 8e ff 79 9d aa 90 10 ab b8 ef 
+GATT-RX:     00 f4 a8 c7 92 53 ee 9e 15 c7 fb 47 3e e8 07 fb 
+GATT-RX:     c4 ea 8a f7 2d 71 3a 33 da 12 e9 0f 
+
+Subscription changed for node 0100 status: Success
+Element Addr:    0100
+Subscr Addr:    c000
+Model ID:    1100`
+</code></pre>
+<p>&#x8BBE;&#x7F6E;sensor server model (0x1100)&#x4F7F;&#x7528;app key index = 1&#x7684;app key&#x53D1;&#x5E03;&#x4FE1;&#x606F;&#xFF0C;&#x53D1;&#x5E03;&#x5730;&#x5740;&#x662F;0xc000&#xFF0C;</p>
+<pre><code class="lang-text">`[config: Target = 0100]# pub-set 0100 c000 1 0 0 1100
+GATT-TX:     00 f4 d1 a1 54 ee 1b 9f 18 4e 3c 44 ab 57 f9 82 
+GATT-TX:     73 41 9e 9c ab 3d 5c dd ad 27 c3 18 b7 22 
+GATT-TX:     00 f4 d0 95 d8 43 e4 87 12 96 14 bf 52 55 5a 8a 
+GATT-TX:     ad 00 b0 4c b4 46 
+GATT-RX:     00 f4 34 4f 18 3f cf 94 bd 90 49 6a 6d 0e 83 78 
+GATT-RX:     0c b8 7c 14 00 7e 3f b6 fa 
+GATT-RX:     00 f4 66 8c 52 14 1b f9 b8 e2 d9 27 17 0d b0 87 
+GATT-RX:     28 1a 12 65 e6 7f 36 b9 92 c2 c0 79 e8 2d 
+GATT-RX:     00 f4 60 7b 6a a5 b6 9b d4 a2 f0 80 5b e6 9e 0b 
+GATT-RX:     70 0c c9 34 a3 65 11 7f 
+
+Set publication for node 0100 status: Success
+Publication address: 0xc000
+Period: 0 ms
+Retransmit count: 0
+Retransmit Interval Steps: 0
+GATT-TX:     00 f4 d2 0f fb e4 49 24 a0 6c 7d 34 a8 bd dc ca 
+GATT-TX:     c6 a8 9f 17 d0 eb 5b 46 31 
+[config: Target = 0100]# `
+</code></pre>
+<h3 id="provisioning&#x548C;&#x914D;&#x7F6E;client&#x8282;&#x70B9;">Provisioning&#x548C;&#x914D;&#x7F6E;Client&#x8282;&#x70B9;</h3>
+<p>&#x5728;Raspberry PI&#x4E0A;&#xFF0C;&#x8FD0;&#x884C;&#x5E76;&#x8FDB;&#x5165;meshctl&#x547D;&#x4EE4;&#x884C;</p>
+<pre><code class="lang-text">`pi@raspberrypi:~/bluez-5.48/mesh $ ./meshctl .
+Local config directory not provided.
+  netkeys = 1
+  appkeys = 2
+  provisioners = 1
+  provisioned nodes = 1
+On/Off client model: new binding 0001
+[NEW] Controller B8:27:EB:B2:E7:4A raspberrypi [default]
+[NEW] Device D6:FB:47:4F:7E:A9 AOS Device
+Service added /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a
+Char added /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000d:
+Char added /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service000a/char000b:
+Service added /org/bluez/hci0/dev_EC_60_BA_B5_36_D0/service0006`
+</code></pre>
+<p>client&#x8282;&#x70B9;&#x4E0A;&#x7535;&#xFF0C;&#x5E76;&#x5F00;&#x542F;&#x53D1;&#x73B0;unprovisioned &#x8BBE;&#x5907;&#x6A21;&#x5F0F;&#xFF0C;&#x53D1;&#x73B0;&#x65B0;unprovisioned&#x8BBE;&#x5907;</p>
+<pre><code class="lang-text">`[meshctl]# discover-unprovisioned on
+SetDiscoveryFilter success
+Discovery started
+Adapter property changed 
+[CHG] Controller B8:27:EB:B2:E7:4A Discovering: yes
+        Mesh Provisioning Service (00001827-0000-1000-8000-00805f9b34fb)
+            Device UUID: dddd0000000000000000000000000000
+            OOB: 0000`
+</code></pre>
+<p>&#x8BA4;&#x8BC1;&#x8BE5;&#x8BBE;&#x5907;</p>
+<pre><code class="lang-text">`[meshctl]# provision dddd
+Trying to connect Device D6:FB:47:4F:7E:A9 AOS Device
+Adapter property changed 
+[CHG] Controller B8:27:EB:B2:E7:4A Discovering: no
+Connection successful
+Service added /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service0006
+Service added /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a
+Char added /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a/char000b:
+Char added /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a/char000d:
+Services resolved yes
+Found matching char: path /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a/char000b, uuid 00002adb-0000-1000-8000-00805f9b34fb
+Found matching char: path /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a/char000d, uuid 00002adc-0000-1000-8000-00805f9b34fb
+Start notification on /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a/char000d
+Characteristic property changed /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a/char000d
+AcquireNotify success: fd 7 MTU 65
+Notify for Mesh Provisioning Out Data started
+Open-Node: 0xe51ab0
+Open-Prov: 0xe59bf0
+Open-Prov: proxy 0xe4c200
+Initiated provisioning
+Characteristic property changed /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a/char000b
+AcquireWrite success: fd 8 MTU 65
+GATT-TX:     03 00 10 
+GATT-RX:     03 01 01 00 01 00 00 04 00 08 00 00 00 
+Got provisioning data (12 bytes)
+     01 01 00 01 00 00 04 00 08 00 00 00 
+GATT-TX:     03 02 00 00 02 03 04 
+GATT-TX:     03 03 86 03 e8 b6 50 d7 4d 33 e3 fd aa c0 fa 46 
+GATT-TX:     d5 1c a8 58 91 c1 4d de 96 30 26 8c a0 3c c3 5b 
+GATT-TX:     c6 87 f4 e9 b9 08 a7 e7 2d 67 ae 3a 7c f7 1c 42 
+GATT-TX:     6a da 6d 41 ba 77 17 69 25 a1 75 46 e5 eb 31 ee 
+GATT-TX:     07 5d 
+GATT-RX:     43 03 26 00 86 9a 35 54 40 b8 be 53 a0 88 e1 55 
+GATT-RX:     19 33 ee f4 4d 03 35 12 59 6d a5 63 de a2 0a dc 
+GATT-RX:     24 e4 a7 8a 8d 42 27 76 d8 2c a9 87 69 27 68 61 
+GATT-RX:     2b 56 f8 97 3c a9 bf de b6 64 00 f5 77 91 
+GATT-RX:     c3 73 3f 94 62 
+Got provisioning data (65 bytes)
+     03 26 00 86 9a 35 54 40 b8 be 53 a0 88 e1 55 19 
+     33 ee f4 4d 03 35 12 59 6d a5 63 de a2 0a dc 24 
+     e4 a7 8a 8d 42 27 76 d8 2c a9 87 69 27 68 61 2b 
+     56 f8 97 3c a9 bf de b6 64 00 f5 77 91 73 3f 94 
+     62 
+Request decimal key (0 - 9999)
+[AOS 1m[mesh] Enter Numeric key:`
+</code></pre>
+<p>&#x67E5;&#x770B;server&#x547D;&#x4EE4;&#x884C;OOB&#x8F93;&#x51FA;</p>
+<pre><code class="lang-text">`Initializing...
+Bluetooth initialized
+Mesh initialized
+OOB Number: 4159`
+</code></pre>
+<p>&#x5728;Raspberry PI&#x4E0A;&#x952E;&#x5165;4159&#xFF0C;&#x8FDB;&#x884C;&#x540E;&#x7EED;provision&#xFF0C;&#x540E;&#x7EED;&#x4F1A;&#x6253;&#x5370;&#x4E00;&#x957F;&#x4E32;log</p>
+<pre><code class="lang-text">`[AOS 1m[mesh] Enter Numeric key: 4159
+GATT-TX:     03 05 20 2e 58 e4 b8 06 93 0d a2 b5 2f 7b eb 16 
+GATT-TX:     99 07 
+GATT-RX:     03 05 fd ee fd f5 3d 54 71 42 91 92 64 a4 69 46 
+GATT-RX:     f7 bc 
+Got provisioning data (17 bytes)
+     05 fd ee fd f5 3d 54 71 42 91 92 64 a4 69 46 f7 
+     bc 
+GATT-TX:     03 06 e6 4e 15 4c 75 e4 2d 76 d3 0b 13 64 91 f0 
+GATT-TX:     ac e4 
+GATT-RX:     03 06 54 65 35 17 f6 cb 77 bc ae af 19 8e 7c 92 
+GATT-RX:     71 f3 
+Got provisioning data (17 bytes)
+     06 54 65 35 17 f6 cb 77 bc ae af 19 8e 7c 92 71 
+     f3 
+Confirmation Validated
+S-Key     b4 dc cb 8f 1d 62 4e c4 95 f5 74 6d ff bc 42 d9 
+S-Nonce     54 c1 e5 68 cf a6 ec c0 47 3b 8f f4 25 
+DevKey     0c c5 26 e9 12 e3 d2 89 39 20 3a af 27 a4 f9 d2 
+Data     18 ee d9 c2 a5 6a dd 85 04 9f fc 3c 59 ad 0e 12 
+Data     00 00 00 00 00 00 05 01 01 
+DataEncrypted + mic     80 bb ca b9 3f ca ff 49 5d 22 3c d3 5a 70 45 61 
+DataEncrypted + mic     ae a4 a7 7b b6 15 b6 ed df 7c 47 8f 84 8d d4 dc 
+DataEncrypted + mic     db 
+GATT-TX:     03 07 80 bb ca b9 3f ca ff 49 5d 22 3c d3 5a 70 
+GATT-TX:     45 61 ae a4 a7 7b b6 15 b6 ed df 7c 47 8f 84 8d 
+GATT-TX:     d4 dc db 
+GATT-RX:     03 08 
+Got provisioning data (1 bytes)
+     08 
+Provision success. Assigned Primary Unicast 0101
+Attempting to disconnect from D6:FB:47:4F:7E:A9
+Characteristic property changed /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a/char000d
+Write closed
+Service added /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a
+Char added /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a/char000b:
+Char added /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a/char000d:
+Services resolved no
+SetDiscoveryFilter success
+Discovery started
+Adapter property changed 
+[CHG] Controller B8:27:EB:B2:E7:4A Discovering: yes
+
+        Mesh Proxy Service (00001828-0000-1000-8000-00805f9b34fb)
+        Identity for node 0101
+Trying to connect to mesh
+Adapter property changed 
+[CHG] Controller B8:27:EB:B2:E7:4A Discovering: no
+Connection successful
+Services resolved yes
+Found matching char: path /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a/char000b, uuid 00002add-0000-1000-8000-00805f9b34fb
+Found matching char: path /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a/char000d, uuid 00002ade-0000-1000-8000-00805f9b34fb
+Start notification on /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a/char000d
+Characteristic property changed /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a/char000d
+AcquireNotify success: fd 7 MTU 65
+Notify for Mesh Proxy Out Data started
+Trying to open mesh session
+GATT-RX:     01 01 00 d4 76 79 43 3f db 10 4a 00 00 00 05 f4 
+GATT-RX:     0a 41 fa b0 af 32 0b 
+iv_upd_state = IV_UPD_NORMAL
+Mesh session is open
+Characteristic property changed /org/bluez/hci0/dev_D6_FB_47_4F_7E_A9/service000a/char000b
+AcquireWrite success: fd 8 MTU 65
+GATT-TX:     02 f4 8c 6d ef 98 ac 2e 79 c8 e0 2c 83 2b 4a b4 
+GATT-TX:     c9 1f e3 a9 
+GATT-TX:     00 f4 95 a2 60 a7 67 ec a4 40 e9 18 1a 69 a4 00 
+GATT-TX:     c1 54 c7 3d a9 d7 
+GATT-RX:     02 f4 35 d1 c4 66 28 17 1b 6d ed 86 f9 26 19 ca 
+GATT-RX:     d5 6f 3c 9e 7b cd 
+Proxy Whitelist filter length: 0
+GATT-RX:     00 f4 98 0a 63 16 58 d9 d6 34 75 81 6d 7e a3 5f 
+GATT-RX:     83 2f 1c 58 17 ad 23 17 7d 7b 50 ee 4e 61 
+GATT-RX:     00 f4 cf 10 98 83 f6 b7 13 22 45 a0 6b 53 1b 51 
+GATT-RX:     c8 35 4b a7 f4 0e f4 f3 d4 c2 0c 25 12 ec 
+GATT-RX:     00 f4 a3 1e 00 1c 07 b8 e8 a6 9f 29 aa 84 7e eb 
+GATT-RX:     ee 7a 7c 6b 13 63 37 ce 
+    Composition data for node 0101 {
+  &quot;cid&quot;:&quot;0002&quot;,
+  &quot;pid&quot;:&quot;0000&quot;,
+  &quot;vid&quot;:&quot;0000&quot;,
+  &quot;crpl&quot;:&quot;0005&quot;,
+  &quot;features&quot;:{
+    &quot;relay&quot;:false,
+    &quot;proxy&quot;:true,
+    &quot;friend&quot;:false,
+    &quot;lpn&quot;:false
+  },
+  &quot;elements&quot;:[
+    {
+      &quot;elementIndex&quot;:0,
+      &quot;location&quot;:&quot;0000&quot;,
+      &quot;models&quot;:[
+        &quot;0000&quot;,
+        &quot;0001&quot;,
+        &quot;1102&quot;
+      ]
+    }
+  ]
+}
+GATT-TX:     00 f4 71 66 e6 89 61 44 19 6b c1 75 a4 a9 b8 f2 
+GATT-TX:     ed 9b b9 ee 99 b5 96 bc 05 `
+</code></pre>
+<p>&#x4E0A;&#x8FF0;log&#x5206;&#x4E3A;&#x4E24;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x9636;&#x6BB5;&#x662F;&#x5229;&#x7528;provisioning connection&#x8FDB;&#x884C;provision&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x9636;&#x6BB5;&#x662F;&#x5EFA;&#x7ACB;mesh proxy connection&#xFF0C;&#x540E;&#x7EED;&#x9700;&#x8981;&#x5728;&#x8FD9;&#x4E2A;connection&#x4E0A;&#x4F20;&#x8F93;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x5F53;&#x4E0A;&#x8FF0;log&#x5B8C;&#x6574;&#x6253;&#x5370;&#x540E;&#xFF0C;server&#x7AEF;&#x4F1A;&#x6253;&#x5370;provision&#x6210;&#x529F;&#x5B8C;&#x6210;&#x7684;&#x4FE1;&#x606F;</p>
+<pre><code class="lang-text">`Provisioning completed!
+Net ID: 0
+Unicast addr: 0x0101`
+</code></pre>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x662F;&#x5728;&#x521A;&#x624D;&#x5EFA;&#x7ACB;&#x7684;mesh proxy connection&#x4E0A;&#x4F20;&#x9012;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x4FE1;&#x606F;</p>
+<p>&#x9996;&#x5148;&#x662F;&#x8FDB;&#x5165;&#x83DC;&#x5355;</p>
+<pre><code class="lang-text">`[AOS Device-Node-0101]# menu config
+Menu config:
+Available commands:
+-------------------
+target &lt;unicast&gt;                                  Set target node to configure
+composition-get [page_num]                        Get Composition Data
+netkey-add &lt;net_idx&gt;                              Add network key
+netkey-del &lt;net_idx&gt;                              Delete network key
+appkey-add &lt;app_idx&gt;                              Add application key
+appkey-del &lt;app_idx&gt;                              Delete application key
+bind &lt;ele_idx&gt; &lt;app_idx&gt; &lt;mod_id&gt; [cid]           Bind app key to a model
+ttl-set &lt;ttl&gt;                                     Set default TTL
+ttl-get                                           Get default TTL
+pub-set &lt;ele_addr&gt; &lt;pub_addr&gt; &lt;app_idx&gt; &lt;per (step|res)&gt; &lt;re-xmt (cnt|per)&gt; &lt;mod id&gt; [cid] 
+                          Set publication
+pub-get &lt;ele_addr&gt; &lt;model&gt;                        Get publication
+proxy-set &lt;proxy&gt;                                 Set proxy state
+proxy-get                                         Get proxy state
+ident-set &lt;net_idx&gt; &lt;state&gt;                       Set node identity state
+ident-get &lt;net_idx&gt;                               Get node identity state
+relay-set &lt;relay&gt; &lt;rexmt count&gt; &lt;rexmt steps&gt;     Set relay
+relay-get                                         Get relay
+hb-pub-set &lt;pub_addr&gt; &lt;count&gt; &lt;period&gt; &lt;features&gt; &lt;net_idx&gt; Set heartbeati publish
+sub-add &lt;ele_addr&gt; &lt;sub_addr&gt; &lt;model id&gt;          Subscription add
+sub-get &lt;ele_addr&gt; &lt;model id&gt;                     Subscription get
+app-get &lt;ele_addr&gt; &lt;model id&gt;                     Get App Keys
+back                                              Return to main menu
+version                                           Display version
+quit                                              Quit program
+exit                                              Quit program
+help                                              Display help about this program`
+</code></pre>
+<p>&#x9009;&#x62E9;&#x914D;&#x7F6E;&#x8282;&#x70B9;&#xFF0C;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8282;&#x70B9;ucast addr&#x662F;0x0101</p>
+<pre><code class="lang-text">`[AOS Device-Node-0101]# target 0101
+Configuring node 0101
+[config: Target = 0101]# target 0101[config: Target = 0101]#`
+</code></pre>
+<p>&#x914D;&#x7F6E;app key</p>
+<pre><code class="lang-text">`[config: Target = 0101]# target 0101[config: Target = 0101]# appkey-add 1
+GATT-TX:     00 f4 2b 37 95 64 e7 fe ba 41 b3 c8 d9 0c f4 0c 
+GATT-TX:     76 36 a4 f0 f9 c4 f8 93 73 8a 3d 7d 7e c1 
+GATT-TX:     00 f4 43 6e 87 5d 09 0b 4b 05 a0 1b c0 48 da a1 
+GATT-TX:     bf d6 9b 21 91 68 d8 b0 b4 27 57 90 61 06 
+GATT-RX:     00 f4 7f d6 9d 40 6d bc 10 5f 41 67 68 56 9c d8 
+GATT-RX:     b9 77 dc 71 b5 10 ec b1 85 
+GATT-RX:     00 f4 81 91 ee 63 66 b4 5a 42 6f 70 f6 d2 12 93 
+GATT-RX:     2d 9f 21 2d fa a3 89 2f 4b 
+Node 0101 AppKey Status Success
+    NetKey 000, AppKey 001`
+</code></pre>
+<p>&#x5C06;client&#x8282;&#x70B9;&#x7684;element 0&#x7684;sensor client model (0x1102)&#x7ED1;&#x5B9A;&#x5230;app key index =1&#x7684;app key&#x4E0A;</p>
+<pre><code class="lang-text">`[config: Target = 0101]# bind 0 1 1102
+GATT-TX:     00 f4 97 c8 22 ee 6f 11 c3 c6 7c 5c 4f 88 e4 3d 
+GATT-TX:     36 9e 19 c7 3f a8 f3 d3 d4 7d 90 
+GATT-RX:     00 f4 e9 e9 33 90 5a f3 cb 88 c1 3e 44 af f6 61 
+GATT-RX:     d0 ef 47 35 35 c3 03 8a c9 43 01 7d 
+Node 0101 Model App Status Success
+    Element 0101 AppIdx 001
+ModelId 1102`
+</code></pre>
+<p>&#x589E;&#x52A0;sensor client model (0x1102)&#x8BA2;&#x9605;&#x53D1;&#x5E03;&#x5730;&#x5740;0xc000&#x7684;&#x4FE1;&#x606F;</p>
+<pre><code class="lang-text">`[config: Target = 0101]# sub-add 0101 c000 1102
+GATT-TX:     00 f4 c5 5e 47 70 42 84 3b 28 14 26 60 83 01 69 
+GATT-TX:     7c 25 c3 c2 d9 1d d3 fb c0 e5 65 
+GATT-RX:     00 f4 6f 71 02 d9 ec 00 cf c1 96 f0 3a 7f ea a9 
+GATT-RX:     b1 fb 6d 70 31 62 d8 d0 4b 5d 81 a6 
+
+Subscription changed for node 0101 status: Success
+Element Addr:    0101
+Subscr Addr:    c000
+Model ID:    1102`
+</code></pre>
+<p>&#x8BBE;&#x7F6E;sensor client model (0x1102)&#x4F7F;&#x7528;app key index = 1&#x7684;app key&#x53D1;&#x5E03;&#x4FE1;&#x606F;&#xFF0C;&#x53D1;&#x5E03;&#x5730;&#x5740;&#x662F;0xc000&#xFF0C;</p>
+<pre><code class="lang-text">`[config: Target = 0101]# pub-set 0101 c000 1 0 0 1102
+GATT-TX:     00 f4 5a 22 c5 d2 d0 76 94 a9 7f 70 6e 64 c1 f3 
+GATT-TX:     be 58 43 fc f1 61 f0 ac dc ce 4d 0b 9c f1 
+GATT-TX:     00 f4 1a 8a af 58 92 d2 d5 38 b2 0f 62 56 34 96 
+GATT-TX:     5f 08 9e 5a c6 54 
+GATT-RX:     00 f4 eb 12 ea 4f 6f 1f f8 e6 f2 92 c4 d7 82 a0 
+GATT-RX:     ad 9e c9 92 9e 91 d4 a6 3c 
+GATT-RX:     00 f4 2a 11 82 c6 86 27 0a 4a 88 bf a6 02 74 56 
+GATT-RX:     d5 2d 28 72 24 cd ae 91 fa dc 72 35 d7 be 
+GATT-RX:     00 f4 a7 08 14 6c 95 bd 62 07 67 1b c6 c8 95 b8 
+GATT-RX:     f2 a9 3b 03 d2 82 d1 97 
+
+Set publication for node 0101 status: Success
+Publication address: 0xc000
+Period: 0 ms
+Retransmit count: 0
+Retransmit Interval Steps: 0
+GATT-TX:     00 f4 f0 60 6a 70 db 3b e2 60 a6 c8 50 d9 03 36 
+GATT-TX:     d5 a1 47 c9 2f 25 49 5e 47`
+</code></pre>
+<p>&#x4E0A;&#x8FF0;&#x914D;&#x7F6E;&#x5168;&#x90E8;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;client&#x8282;&#x70B9;&#x770B;&#x5230;&#x5468;&#x671F;&#x6027;&#x53D1;&#x9001;&#x6E29;&#x5EA6;&#x8BF7;&#x6C42;&#x4FE1;&#x606F;&#x548C;&#x6536;&#x5230;&#x56DE;&#x590D;&#x7684;log</p>
+<pre><code class="lang-text">`Sensor status Get request sent with OpCode 0x00008231
+Got the sensor status 
+Sensor ID: 0x2a1f
+Temperature value: 27`
+</code></pre>
+<p>&#x5728;server&#x8282;&#x70B9;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5468;&#x671F;&#x6027;&#x63A5;&#x6536;&#x5230;&#x6E29;&#x5EA6;&#x8BF7;&#x6C42;&#x548C;&#x53D1;&#x9001;&#x56DE;&#x590D;&#x7684;log</p>
+<pre><code class="lang-text">`Sensor Status Get request received
+Sensor status sent with OpCode 0x00000052`
+</code></pre>
+<footer class="page-footer"><span class="copyright">&#xA9; 2018  author. All rights reserved.</span><span class="footer-modification"><span id="busuanzi_container_site_uv" style="display:none">&#x672C;&#x7AD9;&#x8BBF;&#x5BA2;&#x6570; <span id="busuanzi_value_site_uv"></span> &#x4EBA;&#x6B21;</span></span></footer><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="yq-linkvoice.html" class="navigation navigation-prev " aria-label="Previous page: 阿里智能语音服务">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="yq-iot-network-features.html" class="navigation navigation-next " aria-label="Next page: 关于IoT网络的一些特征的探讨">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"AliOS Things SIG BLE Mesh 搭建指南","level":"4.5.4","depth":2,"next":{"title":"关于IoT网络的一些特征的探讨","level":"4.5.5","depth":2,"path":"docs/ji-shu-wen-zhang/yq-iot-network-features.md","ref":"docs/ji-shu-wen-zhang/yq-iot-network-features.md","articles":[]},"previous":{"title":"阿里智能语音服务","level":"4.5.3","depth":2,"path":"docs/ji-shu-wen-zhang/yq-linkvoice.md","ref":"docs/ji-shu-wen-zhang/yq-linkvoice.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.2.3","theme":"default","variables":{},"plugins":["page-footer-copyright","livereload"],"pluginsConfig":{"page-footer-copyright":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/ji-shu-wen-zhang/wiki-sig-ble-mesh.md","mtime":"2018-10-12T06:30:16.932Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-12T06:36:56.468Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
